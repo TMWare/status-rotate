@@ -1,0 +1,70 @@
+{
+  "name": "@tmware/status-rotate",
+  "version": "0.0.0",
+  "description": "Parse in-string variables",
+  "main": "dist/index.js",
+  "types": "typings/index.d.ts",
+  "scripts": {
+    "commit": "npx git-cz",
+    "build": "npm run clean && tsc -p ./",
+    "clean": "rimraf dist",
+    "test": "jest --config jestconfig.json",
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore src/",
+    "lint:fix": "npm run lint --fix",
+    "preversion": "npm run build && npm test",
+    "prepublishOnly": "npm run build && npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TMWare/status-rotate.git"
+  },
+  "author": "TMUniversal <me@tmuniversal.eu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TMWare/status-rotate/issues"
+  },
+  "homepage": "https://github.com/TMWare/status-rotate#readme",
+  "dependencies": {
+    "@tmware/jitsuyo": "^1.1.0",
+    "@tmware/variable-parser": "^1.1.1",
+    "axios": "^0.19.2",
+    "discord-akairo": "^8.1.0",
+    "discord.js": "^12.3.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "@tmuniversal/ts": "^1.0.3",
+    "@types/lodash": "^4.14.161",
+    "@types/node": "^14.6.0",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "cz-conventional-changelog": "^3.2.1",
+    "eslint": "^7.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
+    "jest": "^26.4.2",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.0.1",
+    "typescript": "^4.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix && npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
+  "keywords": [
+    "discord"
+  ]
+}
