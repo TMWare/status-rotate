@@ -1,6 +1,6 @@
 {
   "name": "@tmware/status-rotate",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Parse in-string variables",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
