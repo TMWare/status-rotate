@@ -10,7 +10,6 @@ export default class StatusUpdater {
     /**
      * A status updater that can pull from the internet
      * @param {DiscordClient} client discord.js (extending) client
-     * @param {VariableParser} parser an instance of the variable parser
      * @param {Array<ActivityOptions> | String} statuses Either an array of ActivityOptions or a url to download such an array from.
      * @example const StatusUpdater = new StatusUpdater(client,
      * [
