@@ -8,7 +8,7 @@
     "commit": "npx git-cz",
     "build": "npm run clean && tsc -p ./",
     "clean": "rimraf dist",
-    "test": "jest --config jestconfig.json",
+    "test": "npm run lint",
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore src/",
     "lint:fix": "npm run lint --fix",
     "preversion": "npm run build && npm test",
