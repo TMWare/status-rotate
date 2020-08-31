@@ -1,7 +1,7 @@
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js';
 import { AkairoClient } from 'discord-akairo';
 export declare type DiscordClient = AkairoClient | DJSClient;
-export class StatusUpdater {
+export default class StatusUpdater {
     private client;
     private parser;
     statusUrl?: string;
