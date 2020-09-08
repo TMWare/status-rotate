@@ -12,6 +12,7 @@ node_modules/
 .eslintrc.json
 .gitignore
 .gitattributes
+.prettierrc
 jestconfig.json
 tsconfig.json
 tslint.json

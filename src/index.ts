@@ -1,6 +1,5 @@
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
 import { AkairoClient } from 'discord-akairo'
-import _ from 'lodash'
 import Util from '@tmware/jitsuyo'
 import VariableParser from '@tmware/variable-parser'
 import Axios from 'axios'
@@ -40,9 +39,9 @@ export default class StatusUpdater {
     this.parser = new VariableParser()
     if (statuses) {
       if (typeof statuses === 'string') {
-        if (!Util.validators.isUrl(statuses)) throw new Error('Invalid statuses URL')
+        if (!Util.validators.isUrl(statuses)) { throw new Error('Invalid statuses URL') }
         this.statusUrl = statuses
-      } else if (_.isArray(statuses)) this._statuses = statuses
+      } else if (Array.isArray(statuses)) this._statuses = statuses
       else throw new Error('Invalid status options.')
     }
 
@@ -74,7 +73,11 @@ export default class StatusUpdater {
    * Update the variable parser with the latest data from the client.
    */
   private _updateParserData () {
-    this.parser.updateData({ users: this.client.users.cache.size, guilds: this.client.guilds.cache.size, channels: this.client.channels.cache.size })
+    this.parser.updateData({
+      users: this.client.users.cache.size,
+      guilds: this.client.guilds.cache.size,
+      channels: this.client.channels.cache.size
+    })
   }
 
   /**
@@ -93,7 +96,7 @@ export default class StatusUpdater {
    * @param {ActivityOptions} status ActivityOptions
    */
   public addStatus (status: ActivityOptions) {
-    if (!this.isReady) return Promise.reject(new Error('StatusUpdater is not ready.'))
+    if (!this.isReady) { return Promise.reject(new Error('StatusUpdater is not ready.')) }
     if (!this._statuses.includes(status)) {
       this._statuses.push(status)
       return Promise.resolve(this.statuses)
@@ -116,7 +119,10 @@ export default class StatusUpdater {
    * Trigger a status update
    * @returns {Promise<Presence>}
    */
-  public updateStatus (activity?: ActivityOptions, shardId?: number): Promise<Presence> {
+  public updateStatus (
+    activity?: ActivityOptions,
+    shardId?: number
+  ): Promise<Presence> {
     this._updateParserData()
     const $activity = this.getSafeActivity(activity) || this._chooseActivity()
     if (shardId) $activity.shardID = shardId
@@ -124,12 +130,18 @@ export default class StatusUpdater {
   }
 
   private _chooseActivity (): ActivityOptions {
-    return this.getSafeActivity(this.statuses[~~(Math.random() * this.statuses.length)])
+    return this.getSafeActivity(
+      this.statuses[~~(Math.random() * this.statuses.length)]
+    )
   }
 
   private getSafeActivity = (info: ActivityOptions): ActivityOptions => {
     if (!info) return
-    return { ...info, type: info.type || 'PLAYING', name: this.parser.parse(info.name) || 'a game' }
+    return {
+      ...info,
+      type: info.type || 'PLAYING',
+      name: this.parser.parse(info.name) || 'a game'
+    }
   }
 }
 

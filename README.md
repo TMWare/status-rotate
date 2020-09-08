@@ -42,7 +42,6 @@ With yarn: `yarn add @tmware/status-rotate`
 
 ### Usage
 
-
 ### More advanced examples
 
 ## License
