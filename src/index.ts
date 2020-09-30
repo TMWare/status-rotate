@@ -39,7 +39,9 @@ export default class StatusUpdater {
     this.parser = new VariableParser()
     if (statuses) {
       if (typeof statuses === 'string') {
-        if (!Util.validators.isUrl(statuses)) { throw new Error('Invalid statuses URL') }
+        if (!Util.validators.isUrl(statuses)) {
+          throw new Error('Invalid statuses URL')
+        }
         this.statusUrl = statuses
       } else if (Array.isArray(statuses)) this._statuses = statuses
       else throw new Error('Invalid status options.')
@@ -96,7 +98,9 @@ export default class StatusUpdater {
    * @param {ActivityOptions} status ActivityOptions
    */
   public addStatus (status: ActivityOptions) {
-    if (!this.isReady) { return Promise.reject(new Error('StatusUpdater is not ready.')) }
+    if (!this.isReady) {
+      return Promise.reject(new Error('StatusUpdater is not ready.'))
+    }
     if (!this._statuses.includes(status)) {
       this._statuses.push(status)
       return Promise.resolve(this.statuses)

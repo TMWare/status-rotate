@@ -33,24 +33,18 @@
     "discord.js": "^12.3.1"
   },
   "devDependencies": {
-    "@tmuniversal/ts": "^1.0.3",
+    "@tmuniversal/ts": "^1.1.0",
+    "@tmware/eslint-config": "^1.0.0",
     "@tmware/prettier-config": "^1.0.1",
     "@types/lodash": "^4.14.161",
-    "@types/node": "^14.6.0",
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
+    "@types/node": "^14.11.2",
     "cz-conventional-changelog": "^3.2.1",
-    "eslint": "^7.8.1",
-    "eslint-config-standard": "^14.1.1",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
+    "eslint": "^7.10.0",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "rimraf": "^3.0.2",
     "tslib": "^2.0.1",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   },
   "config": {
     "commitizen": {
@@ -69,5 +63,6 @@
     "presence",
     "rotate",
     "rotator"
-  ]
+  ],
+  "prettier": "@tmware/prettier-config"
 }
