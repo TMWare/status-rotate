@@ -2,7 +2,7 @@
 
 Documentation:
 
-- Update README.md to include (`59d0811`)
+- Update README.md to include (59d0811)
   - usage instructions
   - examples
   - advanced techniques and examples
