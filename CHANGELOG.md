@@ -2,7 +2,11 @@
 
 Documentation:
 
-- Update README.md to include usage information
+- Update README.md to include
+  - usage instructions
+  - examples
+  - advanced techniques and examples
+  - further reading
 - Add `discord.js` to tags
 - Re-order tags
 
