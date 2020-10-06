@@ -1,3 +1,5 @@
+.github/
+.nyc_output/
 .vscode/
 coverage/
 lib/
@@ -6,16 +8,17 @@ docs/
 examples/
 test/
 node_modules/
-.nyc_output/
-.github/
 .editorconfig
 .eslintrc.json
+.eslintignore
 .gitignore
 .gitattributes
 .prettierrc
+.prettierignore
 jestconfig.json
 tsconfig.json
 tslint.json
 package-lock.json
 *.tgz
 *.log
+yarn.lock
