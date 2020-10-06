@@ -2,7 +2,7 @@
 
 Documentation:
 
-- Update README.md to include
+- Update README.md to include (`59d0811`)
   - usage instructions
   - examples
   - advanced techniques and examples
@@ -21,6 +21,7 @@ CI:
 
 Dependencies:
 
+- Move `discord-akairo` to optional dependencies
 - Bump `@types/node` from `14.11.4` to `14.11.5`
 - Remove unused `jest`
 
