@@ -25,11 +25,11 @@
     "url": "https://github.com/TMWare/status-rotate/issues"
   },
   "homepage": "https://github.com/TMWare/status-rotate#readme",
+  "peerDependencies": {},
   "dependencies": {
     "@tmware/jitsuyo": "^1.1.0",
     "@tmware/variable-parser": "^1.1.1",
     "axios": "0.19.2",
-    "discord-akairo": "^8.1.0",
     "discord.js": "^12.3.1"
   },
   "devDependencies": {
@@ -37,14 +37,16 @@
     "@tmware/eslint-config": "^1.0.0",
     "@tmware/prettier-config": "^1.0.1",
     "@types/lodash": "^4.14.161",
-    "@types/node": "^14.11.2",
+    "@types/node": "^14.11.5",
     "cz-conventional-changelog": "^3.2.1",
     "eslint": "^7.10.0",
     "husky": "^4.3.0",
-    "jest": "^26.4.2",
     "rimraf": "^3.0.2",
     "tslib": "^2.0.1",
     "typescript": "^4.0.3"
+  },
+  "optionalDependencies": {
+    "discord-akairo": "^8.1.0"
   },
   "config": {
     "commitizen": {
@@ -62,7 +64,8 @@
     "status",
     "presence",
     "rotate",
-    "rotator"
+    "rotator",
+    "discord.js"
   ],
   "prettier": "@tmware/prettier-config"
 }
