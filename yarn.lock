@@ -140,9 +140,9 @@
   integrity sha512-qIe+iMWe06teNvpePYPE+Sk3+Ih1DWADahdDu3j6c4SLmXPbkczwjEBwX/EN0HVcEB5jdy9GiXijGnmdxgouUQ==
 
 "@tmware/variable-parser@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@tmware/variable-parser/-/variable-parser-1.1.1.tgz#7b3bd2c8acab9510f106381c888da50f9bf22cda"
-  integrity sha512-qlkNtxv7prw3wwOqWbryUm/mBNacDWgFL5/FhegYI25nZ7aYh7wh6kEHNpN7Ljz8DxhtxUPK3ulkrC7U9//4bA==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@tmware/variable-parser/-/variable-parser-1.1.2.tgz#5d27dc3039091f39530dc826347f9fe79386306c"
+  integrity sha512-+kUtiaco6jGxRapxbL3tpwVjidCUrZkaoI2Wp6t7JeOos4zmr7eMok/h5pQyyIUIDs3zvlWCENxd499gE3oyNA==
 
 "@types/json-schema@^7.0.3":
   version "7.0.6"
