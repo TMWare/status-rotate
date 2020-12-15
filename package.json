@@ -1,6 +1,6 @@
 {
   "name": "@tmware/status-rotate",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Discord Bot Status rotation.",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
@@ -29,7 +29,8 @@
     "@tmware/jitsuyo": "^1.4.0",
     "@tmware/variable-parser": "^1.1.2",
     "axios": "0.19.2",
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "discord-akairo": "^8.1.0"
   },
   "devDependencies": {
     "@tmuniversal/ts": "^1.1.1",
