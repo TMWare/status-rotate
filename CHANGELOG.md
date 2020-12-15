@@ -1,3 +1,18 @@
+### 1.0.7 / 15-12-2020
+
+Documentation:
+
+- Create "Features" section in README.md (a098fc4)
+
+Dependencies: (8a3179c)
+
+- Bump `discord.js` from `12.4.1` to `12.5.1`
+- Bump `@tmware/jitsuyo` from `1.1.0` to `1.4.0`
+- Bump `@tmware/variable-parser` from `1.1.1` to `1.1.2`
+- Bump `@types/node` from `14.14.7` to `14.14.13`
+- Bump `eslint` from `7.13.0` to `7.15.0`
+- Bump `husky` from `4.3.0` to `4.3.6`
+
 ### 1.0.6 / 11-11-2020
 
 Dependencies:
