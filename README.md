@@ -33,6 +33,13 @@
 [Status Rotate] lets you manage the presence status of your Discord Bot easily.
 Supports any [discord.js] based bots, including [discord-akairo] or [discord.js-commando](https://www.npmjs.com/package/discord.js-commando).
 
+## Features
+
+- [x] Customize selection of status messages/activities ([details](#passing-status-messages))
+- [x] Variable support (i.e. show how many servers your bot has) ([details](#using-variables))
+- [x] Web-based status message lists ([details](#web-based-status-messages))
+- [ ] Periodically update the status
+
 ## Getting Started
 
 ### Installation
