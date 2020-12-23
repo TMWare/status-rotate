@@ -28,7 +28,7 @@
   "dependencies": {
     "@tmware/jitsuyo": "^1.4.0",
     "@tmware/variable-parser": "^1.1.2",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "discord.js": "^12.5.1",
     "discord-akairo": "^8.1.0"
   },
