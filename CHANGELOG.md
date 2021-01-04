@@ -1,3 +1,15 @@
+### 1.0.8 / 04-01-2021
+
+Dependencies: (a8bdfc9)
+
+- Bump `@tmware/jitsuyo` from `1.4.0` to `1.4.1`
+- Bump `axios` from `0.19.2` to `0.21.1` (security fix)
+- Bump `@tmuniversal/ts` from `1.1.1` to `1.1.2` (ce1f70d)
+- Bump `@types/node` from `14.14.13` to `14.14.19`
+- Bump `eslint` from `7.15.0` to `7.17.0`
+- Removed `cz-conventional-changelog`
+- Removed `optionalDependencies`
+
 ### 1.0.7 / 15-12-2020
 
 Documentation:
