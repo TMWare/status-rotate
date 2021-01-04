@@ -74,10 +74,10 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
-"@tmuniversal/ts@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@tmuniversal/ts/-/ts-1.1.1.tgz#c6b63bad000d855573c1647c32cda24e9642b1c2"
-  integrity sha512-sI2wqlpTQ3FOhuZjf4YOk4UTdEYV5ZdcpJBNsFfrocrMWlESb/UfTllCTccqqman0xQ2MxtGHIvnIyWD/p5EXg==
+"@tmuniversal/ts@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@tmuniversal/ts/-/ts-1.1.2.tgz#0fd484a561665187501f143ace2e997b4e49b600"
+  integrity sha512-lXULW57XYA7tSGb3+FFH/lassiYao+24yhCJGWqqYKmGSEWR7PndyAlwDzPahxE0zx1wKayE2Y84EEFiLO9sCA==
 
 "@tmware/eslint-config@^1.0.0":
   version "1.0.0"
@@ -475,7 +475,7 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-discord-akairo@>=8.1.0:
+discord-akairo@^8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/discord-akairo/-/discord-akairo-8.1.0.tgz#9f3d910e12c197d40d3522a3a93679e2a746a6ca"
   integrity sha512-INWYmHo6NgyYx1ZKGSCmgznVfvkXpWGj4fGCGjO8IPkZ06Bidb9YKr4rXy2lwG0kprCjvqY0qbbhcw6N050abQ==
