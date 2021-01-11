@@ -102,9 +102,9 @@
     acronymresolver "^1.1.2"
 
 "@tmware/prettier-config@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@tmware/prettier-config/-/prettier-config-1.0.1.tgz#32ef509bbb7edbfa2c872208df792e71b25a8061"
-  integrity sha512-qIe+iMWe06teNvpePYPE+Sk3+Ih1DWADahdDu3j6c4SLmXPbkczwjEBwX/EN0HVcEB5jdy9GiXijGnmdxgouUQ==
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tmware/prettier-config/-/prettier-config-1.0.2.tgz#22e4ae599d7bb4da39e5370032ae0bde6a660720"
+  integrity sha512-Fh0esJEUnneuOgM1cJDl5+Ip5nKEXg9RqjxfbOnFmXdkinZWeTD/wyFPLjoKAxqrL/RHaQUPBhguzBfXevRBRA==
 
 "@tmware/variable-parser@^1.1.2":
   version "1.1.2"
