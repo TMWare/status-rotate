@@ -43,7 +43,8 @@ export default class StatusUpdater {
           throw new Error('Invalid statuses URL')
         }
         this.statusUrl = statuses
-      } else if (Array.isArray(statuses)) this._statuses = statuses
+      }
+      else if (Array.isArray(statuses)) this._statuses = statuses
       else throw new Error('Invalid status options.')
     }
 
@@ -65,7 +66,8 @@ export default class StatusUpdater {
     if (this.statusUrl) {
       this._statuses = (await Axios.get(this.statusUrl)).data
       return this._statuses
-    } else {
+    }
+    else {
       return this._statuses || defaultStatuses
     }
   }
@@ -103,7 +105,8 @@ export default class StatusUpdater {
     if (!this._statuses.includes(status)) {
       this._statuses.push(status)
       return Promise.resolve(this.statuses)
-    } else {
+    }
+    else {
       return Promise.reject(new Error('Already included.'))
     }
   }
