@@ -1,13 +1,25 @@
 #!/bin/sh
 . "$(dirname $0)/_/husky.sh"
 
-# Stash unstaged changes
-git stash -q --keep-index
+# Check wether the changed files include js/ts
+if grep -s -q --include='.js,.ts' '' $(git diff --name-only --cached); then
+  # Stash unstaged changes
+  git stash -q --keep-index
 
-# Format files
-yarn eslint --cache --ext .js --ignore-path .gitignore --quiet $(git diff --name-only --cached) --fix || (git stash pop -q && exit 1)
+  # Format files
+  yarn eslint \
+    --cache \
+    --ignore-path .gitignore \
+    --quiet \
+    $(grep --color never -l -s --include='.js' '' $(git diff --name-only --cached)) \
+    --fix ||
+    (git stash pop -q && exit 1)
 
-# Stage updated files
-git add -u
+  # Stage updated files
+  git add -u
+else
+  echo "Staged files do not include lintable files, skipping pre-commit formatting..."
+  exit 0
+fi
 
-# Re-apply original unstaged changes (post-commit)
+# Re-apply original unstaged changes (happens in post-commit)
