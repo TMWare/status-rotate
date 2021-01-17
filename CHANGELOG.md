@@ -1,3 +1,22 @@
+### 1.1.0 / 18-01-2021
+
+Features:
+
+- Filter Bots from user count
+
+Simplifications:
+
+- Make status file downloads one line
+- `get statuses()` no longer checks `this.isReady`, instead checks whether `this._statuses` has content
+- Use `Jitsuyo.arrayHelper.pickRandom()` to choose a random activity
+- Turn `getSafeActivity` into a regular function (was an arrow function) for consistency
+
+Definitions:
+
+- Fix TypeScript definitions
+
+Additionally, source code is now included in published package
+
 ### 1.0.8 / 04-01-2021
 
 Dependencies: (a8bdfc9)

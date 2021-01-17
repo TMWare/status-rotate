@@ -63,11 +63,10 @@ export default class StatusUpdater {
    */
   private async _getStatuses (): Promise<ActivityOptions[]> {
     if (this.statusUrl) {
-      const statuses = await Axios.get(this.statusUrl)
-      this._statuses = statuses.data
+      this._statuses = (await Axios.get(this.statusUrl)).data
       return this._statuses
     } else {
-      return defaultStatuses
+      return this._statuses || defaultStatuses
     }
   }
 
@@ -76,7 +75,7 @@ export default class StatusUpdater {
    */
   private _updateParserData () {
     this.parser.updateData({
-      users: this.client.users.cache.size,
+      users: this.client.users.cache.filter(u => !u.bot).size,
       guilds: this.client.guilds.cache.size,
       channels: this.client.channels.cache.size
     })
@@ -115,8 +114,7 @@ export default class StatusUpdater {
    */
   public get statuses (): ActivityOptions[] {
     // If the status download isn't done yet, serve the default statuses instead.
-    if (!this.isReady) return defaultStatuses
-    return this._statuses
+    return this._statuses || defaultStatuses
   }
 
   /**
@@ -134,12 +132,10 @@ export default class StatusUpdater {
   }
 
   private _chooseActivity (): ActivityOptions {
-    return this.getSafeActivity(
-      this.statuses[~~(Math.random() * this.statuses.length)]
-    )
+    return this.getSafeActivity(Util.arrayHelper.pickRandom(this.statuses))
   }
 
-  private getSafeActivity = (info: ActivityOptions): ActivityOptions => {
+  private getSafeActivity (info: ActivityOptions): ActivityOptions {
     if (!info) return
     return {
       ...info,
