@@ -1,0 +1,13 @@
+#!/bin/sh
+. "$(dirname $0)/_/husky.sh"
+
+# Stash unstaged changes
+git stash -q --keep-index
+
+# Format files
+yarn eslint --cache --ext .js --ignore-path .gitignore --quiet $(git diff --name-only --cached) --fix || (git stash pop -q && exit 1)
+
+# Stage updated files
+git add -u
+
+# Re-apply original unstaged changes (post-commit)

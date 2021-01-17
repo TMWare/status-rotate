@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname $0)/_/husky.sh"
+
+# Re-apply original unstaged changes
+bash -c "if [[ \$(git stash list) ]]; then git stash pop -q; fi"

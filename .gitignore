@@ -89,3 +89,4 @@ data.json
 build/
 dist/
 .vscode/
+.eslintcache

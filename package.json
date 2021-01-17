@@ -8,11 +8,13 @@
     "build": "yarn run clean && tsc -p ./",
     "clean": "rimraf dist",
     "test": "yarn run lint",
-    "lint": "eslint --ext .js,.ts --ignore-path .gitignore src/",
+    "lint": "eslint --cache --ext .js,.ts --ignore-path .gitignore src/",
     "lint:fix": "yarn run lint --fix",
     "preversion": "yarn run build && yarn test",
-    "prepublishOnly": "yarn run build && yarn test",
-    "postversion": "git push && git push --tags"
+    "prepublishOnly": "pinst --disable && yarn run build && yarn test",
+    "postpublish": "pinst --enable",
+    "postversion": "git push && git push --tags",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -34,23 +36,12 @@
   },
   "devDependencies": {
     "@tmuniversal/ts": "^1.1.2",
-    "@tmware/eslint-config": "^1.0.0",
-    "@tmware/prettier-config": "^1.0.1",
-    "@types/node": "^14.14.19",
-    "eslint": "^7.17.0",
-    "husky": "^4.3.6",
+    "@tmware/eslint-config": "^1.0.1",
+    "@types/node": "^14.14.21",
+    "eslint": "^7.18.0",
+    "husky": "^5.0.6",
+    "pinst": "^2.1.1",
     "rimraf": "^3.0.2"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn run lint:fix && yarn run lint",
-      "pre-push": "yarn test"
-    }
   },
   "keywords": [
     "discord",
@@ -59,6 +50,5 @@
     "rotate",
     "rotator",
     "status"
-  ],
-  "prettier": "@tmware/prettier-config"
+  ]
 }
