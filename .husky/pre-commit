@@ -2,7 +2,7 @@
 . "$(dirname $0)/_/husky.sh"
 
 # Check wether the changed files include js/ts
-if grep -s -q --include='.js,.ts' '' $(git diff --name-only --cached); then
+if grep -s -q --include=\*.{js,ts} '' $(git diff --name-only --cached); then
   # Stash unstaged changes
   git stash -q --keep-index
 
@@ -11,7 +11,7 @@ if grep -s -q --include='.js,.ts' '' $(git diff --name-only --cached); then
     --cache \
     --ignore-path .gitignore \
     --quiet \
-    $(grep --color never -l -s --include='.js' '' $(git diff --name-only --cached)) \
+    $(grep --color never -l -s --include=\*.{js,ts} '' $(git diff --name-only --cached)) \
     --fix ||
     (git stash pop -q && exit 1)
 
