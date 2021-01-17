@@ -15,6 +15,28 @@ Definitions:
 
 - Fix TypeScript definitions
 
+Style:
+
+- Apply new `eslint` rules from updated config package (see below)
+
+Scripts:
+
+- Update scripts for `husky` v5
+- - Extend `prepublishOnly` by a `pinst` call to disable the `postinstall` script for the published package
+- - Add a `postinstall` script to install `husky` hooks
+- - Add a `postpublish` script to re-enable the `postinstall` script after publishing
+
+- Migrate `husky` scripts for linting to v5 (now located in `.husky/`)
+
+Dependencies:
+
+- Bump `@tmware/eslint-config` from `1.0.0` to `1.0.1`
+- Bump `@types/node` from `14.14.19` to `14.14.21`
+- Bump `eslint` from `7.17.0` to `7.18.0`
+- Bump `husky` from `4.3.6` to `5.0.6` (BREAKING)
+- Add `pint` version `2.1.1` (to take care of postinstall script for published package)
+- Remove `@tmware/prettier-config` (no longer wanted)
+
 Additionally, source code is now included in published package
 
 ### 1.0.8 / 04-01-2021
