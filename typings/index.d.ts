@@ -1,8 +1,8 @@
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
 import { AkairoClient } from 'discord-akairo'
-export declare type DiscordClient = AkairoClient | DJSClient
+type DiscordClient = AkairoClient | DJSClient
 declare module '@tmware/status-rotate' {
-  export default class StatusUpdater {
+  class StatusUpdater {
     private client
     private parser
     statusUrl?: string
