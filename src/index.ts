@@ -1,3 +1,6 @@
+/// <reference path="../typings/index.d.ts" />
+'use strict'
+
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
 import { AkairoClient } from 'discord-akairo'
 import Util from '@tmware/jitsuyo'
