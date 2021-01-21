@@ -7,9 +7,9 @@
   "scripts": {
     "build": "yarn run clean && tsc -p ./",
     "clean": "rimraf dist",
-    "test": "yarn run lint",
-    "lint": "eslint --cache --ext .js,.ts --ignore-path .gitignore src/",
-    "lint:fix": "yarn run lint --fix",
+    "test": "yarn run lint src/",
+    "lint": "eslint --cache --report-unused-disable-directives --ext .js,.ts --ignore-path .gitignore --ignore-path .eslintignore",
+    "lint:fix": "yarn run lint src/ --fix",
     "preversion": "yarn run build && yarn test",
     "prepublishOnly": "pinst --disable && yarn run build && yarn test",
     "postpublish": "pinst --enable",
@@ -37,10 +37,10 @@
   "devDependencies": {
     "@tmuniversal/ts": "^1.1.2",
     "@tmware/eslint-config": "^1.0.1",
-    "@types/node": "^14.14.21",
+    "@types/node": "^14.14.22",
     "eslint": "^7.18.0",
     "husky": "^5.0.6",
-    "pinst": "^2.1.1",
+    "pinst": "^2.1.2",
     "rimraf": "^3.0.2"
   },
   "keywords": [
