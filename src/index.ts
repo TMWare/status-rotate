@@ -7,7 +7,7 @@ import Util from '@tmware/jitsuyo'
 import VariableParser from '@tmware/variable-parser'
 import Axios from 'axios'
 
-const defaultStatuses: Array<ActivityOptions> = [
+const defaultStatuses: ActivityOptions[] = [
   { type: 'PLAYING', name: 'with {users} users' },
   { type: 'LISTENING', name: '{users} users' },
   { type: 'WATCHING', name: 'over {users} users' },
@@ -19,8 +19,8 @@ const defaultStatuses: Array<ActivityOptions> = [
 export type DiscordClient = AkairoClient | DJSClient
 
 export default class StatusUpdater {
-  private client: DiscordClient
-  private parser: VariableParser
+  private readonly client: DiscordClient
+  private readonly parser: VariableParser
   public statusUrl?: string
   private _statuses: ActivityOptions[]
   private isReady: boolean
@@ -56,7 +56,7 @@ export default class StatusUpdater {
     this._init()
   }
 
-  private async _init () {
+  private async _init (): Promise<void> {
     this._getStatuses().then(() => {
       this.isReady = true
     })
@@ -67,7 +67,7 @@ export default class StatusUpdater {
    */
   private async _getStatuses (): Promise<ActivityOptions[]> {
     if (this.statusUrl) {
-      this._statuses = (await Axios.get(this.statusUrl)).data
+      this._statuses = (await Axios.get(this.statusUrl)).data as ActivityOptions[]
       return this._statuses
     }
     else {
@@ -78,7 +78,7 @@ export default class StatusUpdater {
   /**
    * Update the variable parser with the latest data from the client.
    */
-  private _updateParserData () {
+  private _updateParserData (): void {
     this.parser.updateData({
       users: this.client.users.cache.filter(u => !u.bot).size,
       guilds: this.client.guilds.cache.size,
@@ -101,16 +101,16 @@ export default class StatusUpdater {
    * Add a status to the possible statuses
    * @param {ActivityOptions} status ActivityOptions
    */
-  public addStatus (status: ActivityOptions) {
+  public async addStatus (status: ActivityOptions): Promise<ActivityOptions[]> {
     if (!this.isReady) {
-      return Promise.reject(new Error('StatusUpdater is not ready.'))
+      return await Promise.reject(new Error('StatusUpdater is not ready.'))
     }
     if (!this._statuses.includes(status)) {
       this._statuses.push(status)
-      return Promise.resolve(this.statuses)
+      return await Promise.resolve(this.statuses)
     }
     else {
-      return Promise.reject(new Error('Already included.'))
+      return await Promise.reject(new Error('Already included.'))
     }
   }
 
@@ -127,14 +127,14 @@ export default class StatusUpdater {
    * Trigger a status update
    * @returns {Promise<Presence>}
    */
-  public updateStatus (
+  public async updateStatus (
     activity?: ActivityOptions,
     shardId?: number
   ): Promise<Presence> {
     this._updateParserData()
     const $activity = this.getSafeActivity(activity) || this._chooseActivity()
     if (shardId) $activity.shardID = shardId
-    return this.client.user.setActivity($activity)
+    return await this.client.user.setActivity($activity)
   }
 
   private _chooseActivity (): ActivityOptions {

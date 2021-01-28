@@ -1,3 +1,11 @@
 {
-  "extends": "@tmware"
+  "extends": ["@tmware", "@tmware/eslint-config-typescript"],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "tsconfigRootDir": ".", // __dirname
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/triple-slash-reference": 0
+  }
 }
