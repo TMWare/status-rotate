@@ -1,3 +1,24 @@
+### 1.1.1 / 28-01-2021
+
+Definitions:
+
+- Finally fix up those typedefs
+- - Fixed breaking error that failed building typescript packages
+
+Auxillary:
+
+- Fix linting scripts
+- Updated husky hooks to be more efficient
+- Update to new @tmware eslint config ecosystem
+
+Dependencies:
+
+- Add `@tmware/eslint-config-typescript` v`1.0.4`
+- Bump `@tmware/eslint-config` from `1.0.1` to `1.1.1`
+- Bump `@types/node` from `14.14.21` to `14.14.22`
+- Bump `husky` from `5.0.6` to `5.0.8`
+- Bump `pinst` from `2.1.1` to `2.1.4`
+
 ### 1.1.0 / 18-01-2021
 
 Features:
