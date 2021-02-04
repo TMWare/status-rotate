@@ -80,9 +80,9 @@
   integrity sha512-lXULW57XYA7tSGb3+FFH/lassiYao+24yhCJGWqqYKmGSEWR7PndyAlwDzPahxE0zx1wKayE2Y84EEFiLO9sCA==
 
 "@tmware/eslint-config-typescript@^1.0.4":
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/@tmware/eslint-config-typescript/-/eslint-config-typescript-1.0.4.tgz#91f111f4932556cd685a8904c20eb281d6cb3330"
-  integrity sha512-dx5IVmYrinXSqMLntLJsKg5CL0q8GgFph3JZlnMOzkZlHzMe/GCFUiajHmlJEUjGAzer+Cbd29VqChyheUmD9A==
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@tmware/eslint-config-typescript/-/eslint-config-typescript-1.0.5.tgz#8e3451bc81b86d0db54a60f22cd71f74b4470be9"
+  integrity sha512-QYtJBKLAFaHe3067BgICVOMpNZh70gZYmYI62HHd+CILUsFVcUONkHBgMX6MsCsyNuF0JCR/an9mQ5NDsa6onQ==
   dependencies:
     "@tmware/eslint-config" "^1.1.0"
     "@types/node" "^14.14.22"
