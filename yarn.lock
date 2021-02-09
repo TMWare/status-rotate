@@ -921,9 +921,9 @@ hosted-git-info@^2.1.4:
   integrity sha512-f/wzC2QaWBs7t9IYqB4T3sR1xviIViXJRJTWBlx2Gf3g0Xi5vI7Yy4koXQ1c9OYDGHN9sBy1DQ2AB8fqZBWhUg==
 
 husky@^5.0.8:
-  version "5.0.8"
-  resolved "https://registry.yarnpkg.com/husky/-/husky-5.0.8.tgz#2fd4cb4972bfb3fdb999feb48587aee8925339da"
-  integrity sha512-lijwzgHIJi7iYijEw77DIqyPDR6mFsOuGbjonI83nnAqJbWShGKtAJg1IqnFabnqGPEMiPv0Q8bnSwThfjW95A==
+  version "5.0.9"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-5.0.9.tgz#6d38706643d66ed395bcd4ee952d02e3f15eb3a3"
+  integrity sha512-0SjcaY21a+IRdx7p7r/X33Vc09UR2m8SbP8yfkhUX2/jAmwcz+GR7i9jXkp2pP3GfX23JhMkVP6SWwXB18uXtg==
 
 ignore@^4.0.6:
   version "4.0.6"
