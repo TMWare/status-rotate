@@ -4,6 +4,16 @@
   "description": "Discord Bot Status rotation.",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./index.esm.mjs"
+  },
+  "files": [
+    "dist",
+    "index.esm.mjs",
+    "src",
+    "typings"
+  ],
   "scripts": {
     "build": "yarn run clean && tsc -p ./",
     "clean": "rimraf dist",
@@ -25,6 +35,20 @@
   "bugs": {
     "url": "https://github.com/TMWare/status-rotate/issues"
   },
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/bePatron?u=19830329"
+    },
+    {
+      "type": "ko-fi",
+      "url": "https://ko-fi.com/tmuniversal"
+    },
+    {
+      "type": "github sponsors",
+      "url": "https://github.com/sponsors/TMUniversal"
+    }
+  ],
   "homepage": "https://github.com/TMWare/status-rotate#readme",
   "peerDependencies": {},
   "dependencies": {
@@ -36,11 +60,11 @@
   },
   "devDependencies": {
     "@tmuniversal/ts": "^1.1.2",
-    "@tmware/eslint-config": "^1.1.1",
-    "@tmware/eslint-config-typescript": "^1.0.4",
-    "@types/node": "^14.14.22",
-    "eslint": "^7.18.0",
-    "husky": "^5.0.8",
+    "@tmware/eslint-config": "^1.1.2",
+    "@tmware/eslint-config-typescript": "^1.0.5",
+    "@types/node": "^14.14.31",
+    "eslint": "^7.20.0",
+    "husky": "^5.1.0",
     "pinst": "^2.1.4",
     "rimraf": "^3.0.2"
   },

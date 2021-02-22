@@ -6,6 +6,19 @@ Features:
 - You can now set a remote status file url after initializing
 - Remote status data can now be re-fetched
 
+Auxillary:
+
+- Improve package quality by adding `exports` and `files` fields to `package.json`
+- Add a `funding` field to `package.json`
+
+Dependencies: 
+
+- Bump `@tmware/eslint-config` from `1.1.1` to `1.1.2`
+- Bump `@tmware/eslint-config-typescript` from `1.0.4` to `1.05`
+- Bump `@types/node` from `14.14.22` to `14.14.31`
+- Bump `eslint` from `7.18.0` to `7.20.0`
+- Bump `husky` from `5.0.8` to `5.1.0`
+
 ### 1.1.1 / 28-01-2021
 
 Definitions:
