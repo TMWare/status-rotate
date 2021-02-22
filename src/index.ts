@@ -23,6 +23,8 @@ export default class StatusUpdater {
   public statusUrl?: string
   private _statuses: ActivityOptions[]
   private isReady: boolean
+  // eslint-disable-next-line no-undef
+  private timer: NodeJS.Timeout | false
   /**
    * A status updater that can pull from the internet
    * @param {DiscordClient} client discord.js (extending) client
@@ -72,6 +74,26 @@ export default class StatusUpdater {
     else {
       return this._statuses || defaultStatuses
     }
+  }
+
+  /**
+   * Start automatically switching the client user's status
+   * @param {Number} delay time between status updates in milliseconds
+   */
+  public start (delay: number): void {
+    if (this.timer !== false) throw new Error('automatic status updates are already enabled')
+    this.timer = this.client.setInterval(() => {
+      this.updateStatus()
+    }, delay, this)
+  }
+
+  /**
+   * Stop automatically switching the client user's status
+   */
+  public stop (): void {
+    if (this.timer === false) throw new Error('automatic status updates are not enabled')
+    this.client.clearInterval(this.timer)
+    this.timer = false
   }
 
   /**
