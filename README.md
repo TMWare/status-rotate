@@ -229,7 +229,9 @@ const Updater = new StatusUpdater(
 You may also pass a url after the `StatusUpdater` has been initialized
 
 ```js
-Updater.setStatusFileUrl("https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json")
+Updater.setStatusFileUrl(
+  'https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json'
+)
 ```
 
 Note that this will not fetch any data. The `.refetchOnlineData()` method is used to do this:
@@ -249,9 +251,9 @@ Updater.refetchOnlineData(true)
 Lastly, `.setStatusFileUrl()` and `.refetchOnlineData()` can be chained together:
 
 ```js
-Updater
-  .setStatusFileUrl("https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json")
-  .refetchOnlineData()
+Updater.setStatusFileUrl(
+  'https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json'
+).refetchOnlineData()
 ```
 
 ## License

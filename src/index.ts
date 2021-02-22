@@ -81,17 +81,25 @@ export default class StatusUpdater {
    * @param {Number} delay time between status updates in milliseconds
    */
   public start (delay: number): void {
-    if (this.timer !== false) throw new Error('automatic status updates are already enabled')
-    this.timer = this.client.setInterval(() => {
-      this.updateStatus()
-    }, delay, this)
+    if (this.timer !== false) {
+      throw new Error('automatic status updates are already enabled')
+    }
+    this.timer = this.client.setInterval(
+      () => {
+        this.updateStatus()
+      },
+      delay,
+      this
+    )
   }
 
   /**
    * Stop automatically switching the client user's status
    */
   public stop (): void {
-    if (this.timer === false) throw new Error('automatic status updates are not enabled')
+    if (this.timer === false) {
+      throw new Error('automatic status updates are not enabled')
+    }
     this.client.clearInterval(this.timer)
     this.timer = false
   }
@@ -105,7 +113,7 @@ export default class StatusUpdater {
   public async refetchOnlineData (additive: boolean = false): Promise<ActivityOptions[]> {
     if (!this.statusUrl) throw new Error('no status url specified')
     else if (additive) {
-      this._statuses.push(...(await Axios.get(this.statusUrl)).data as ActivityOptions[])
+      this._statuses.push(...((await Axios.get(this.statusUrl)).data as ActivityOptions[]))
       return this.statuses
     }
     else {
@@ -186,10 +194,7 @@ export default class StatusUpdater {
    * Trigger a status update
    * @returns {Promise<Presence>}
    */
-  public async updateStatus (
-    activity?: ActivityOptions,
-    shardId?: number
-  ): Promise<Presence> {
+  public async updateStatus (activity?: ActivityOptions, shardId?: number): Promise<Presence> {
     this._updateParserData()
     const $activity = this.getSafeActivity(activity) || this._chooseActivity()
     if (shardId) $activity.shardID = shardId

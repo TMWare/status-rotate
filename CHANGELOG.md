@@ -11,7 +11,7 @@ Auxillary:
 - Improve package quality by adding `exports` and `files` fields to `package.json`
 - Add a `funding` field to `package.json`
 
-Dependencies: 
+Dependencies:
 
 - Bump `@tmware/eslint-config` from `1.1.1` to `1.1.2`
 - Bump `@tmware/eslint-config-typescript` from `1.0.4` to `1.05`
