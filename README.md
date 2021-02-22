@@ -38,7 +38,7 @@ Supports any [discord.js] based bots, including [discord-akairo] or [discord.js-
 - [x] Customize selection of status messages/activities ([details](#passing-status-messages))
 - [x] Variable support (i.e. show how many servers your bot has) ([details](#using-variables))
 - [x] Web-based status message lists ([details](#web-based-status-messages))
-- [ ] Periodically update the status
+- [x] Periodically update the status
 
 ## Getting Started
 
@@ -118,7 +118,23 @@ The section above only featured some very basic things [status rotate] can do. I
 
 #### Automating Status Updates
 
-If you want to have such an update done every once in a while, for example every 10 minutes, you can use `discord.js`'s own timers and intervals:
+If you want to have such an update done every once in a while, for example every 10 minutes, use the `.start()` method
+
+```js
+Updater.start(10 * 60 * 1000) // Delay of 10 minutes in milliseconds
+```
+
+This will set up an interval of the given delay (ten minutes in this case).
+
+Use `.stop()` to stop the automatic updates:
+
+```js
+Updater.stop()
+```
+
+This will clear the interval.
+
+If you aren't satisfied with the level of control this gives you, you can adapt the behaviour below to your needs
 
 ```js
 bot.setInterval(
@@ -208,6 +224,34 @@ const Updater = new StatusUpdater(
   bot,
   'https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/exampleFile.json'
 )
+```
+
+You may also pass a url after the `StatusUpdater` has been initialized
+
+```js
+Updater.setStatusFileUrl("https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json")
+```
+
+Note that this will not fetch any data. The `.refetchOnlineData()` method is used to do this:
+
+```js
+Updater.refetchOnlineData()
+```
+
+Will (re-)fetch the previously given file, overriding the old data.
+
+If you want the new data to be added to the old instead, supply a truthy `additive` argument (defaults to false)
+
+```js
+Updater.refetchOnlineData(true)
+```
+
+Lastly, `.setStatusFileUrl()` and `.refetchOnlineData()` can be chained together:
+
+```js
+Updater
+  .setStatusFileUrl("https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json")
+  .refetchOnlineData()
 ```
 
 ## License
