@@ -97,9 +97,9 @@
     typescript "^4.1.3"
 
 "@tmware/eslint-config@^1.1.0", "@tmware/eslint-config@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@tmware/eslint-config/-/eslint-config-1.1.1.tgz#58e2815451446cbf8c8df8aa182e3a94fff1911f"
-  integrity sha512-gQngIG3FZSV27dCYQDecPNQRthOkt+Upf1gLTYkKwzAC1Gx/yv6E2AG16FkJW+jjc1vFvhhKukNCvWownquECQ==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@tmware/eslint-config/-/eslint-config-1.1.2.tgz#9a306b1839dad70e2c39d5544e792f83716a0aec"
+  integrity sha512-buYCKgRQEr2VB57e+5uxxkL4i/3NL2CVDcowZPyXryhZ7iTcVIn8bvxPwXG3ajmd7AtV6rgAKPGwMllGcF4avw==
   dependencies:
     eslint-config-standard "^16.0.2"
     eslint-plugin-import "^2.22.1"
