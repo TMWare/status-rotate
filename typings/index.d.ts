@@ -1,6 +1,6 @@
 declare module '@tmware/status-rotate' {
-  import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
   import { AkairoClient } from 'discord-akairo'
+  import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
   type DiscordClient = AkairoClient | DJSClient
 
   class StatusUpdater {
@@ -23,6 +23,26 @@ declare module '@tmware/status-rotate' {
      * @example const StatusUpdater = new StatusUpdater(client, 'https://example.com/statuses.json')
      */
     constructor (client: DiscordClient, statuses?: ActivityOptions[] | string)
+
+    /**
+     * Re-fetch status details from online url
+     * THIS WILL OVERRIDE CURRENT DATA BY DEFAULT
+     * @param {Boolean} additive add new data to current via Array.push()
+     * @returns {Promise<ActivityOptions[]>}
+     */
+    refetchOnlineData (additive?: boolean): Promise<ActivityOptions[]>
+    /**
+     * Define a url for a remote file
+     * Should be formatted as seen [here](https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json)
+     * You should run refetchOnlineData() to make use of the new file
+     * @example StatusUpdater
+     * .setStatusFileUrl("https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json")
+     * .refetchOnlineData()
+     *
+     * @param {String} url
+     * @returns {StatusUpdater} returns `this` so you can chain .refetchOnlineData()
+     */
+    setStatusFileUrl (url: string): StatusUpdater
     /**
      * Update the variables the StatusUpdater can parse.
      * @param {Object} data Data as an object

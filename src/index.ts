@@ -1,18 +1,17 @@
 /// <reference path="../typings/index.d.ts" />
 'use strict'
 
-import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
-import { AkairoClient } from 'discord-akairo'
 import Util from '@tmware/jitsuyo'
 import VariableParser from '@tmware/variable-parser'
 import Axios from 'axios'
+import { AkairoClient } from 'discord-akairo'
+import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
 
 const defaultStatuses: ActivityOptions[] = [
   { type: 'PLAYING', name: 'with {users} users' },
   { type: 'LISTENING', name: '{users} users' },
   { type: 'WATCHING', name: 'over {users} users' },
   { type: 'PLAYING', name: 'in {guilds} servers' },
-  { type: 'PLAYING', name: '{prefix}help for help' },
   { type: 'WATCHING', name: '{guilds} servers' }
 ]
 
@@ -73,6 +72,44 @@ export default class StatusUpdater {
     else {
       return this._statuses || defaultStatuses
     }
+  }
+
+  /**
+   * Re-fetch status details from online url
+   * THIS WILL OVERRIDE CURRENT DATA BY DEFAULT
+   * @param {Boolean} additive add new data to current via Array.push()
+   * @returns {Promise<ActivityOptions[]>}
+   */
+  public async refetchOnlineData (additive: boolean = false): Promise<ActivityOptions[]> {
+    if (!this.statusUrl) throw new Error('no status url specified')
+    else if (additive) {
+      this._statuses.push(...(await Axios.get(this.statusUrl)).data as ActivityOptions[])
+      return this.statuses
+    }
+    else {
+      this._statuses = (await Axios.get(this.statusUrl)).data as ActivityOptions[]
+      return this.statuses
+    }
+  }
+
+  /**
+   * Define a url for a remote file
+   * Should be formatted as seen [here](https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json)
+   * You should run refetchOnlineData() to make use of the new file
+   * @example StatusUpdater
+   * .setStatusFileUrl("https://gist.githubusercontent.com/TMUniversal/253bd3172c3002be3e15e1152dd31bd4/raw/3c9a2eeb9a79c0b999942e761b11838acb71d89f/exampleFile.json")
+   * .refetchOnlineData()
+   *
+   * @param {String} url
+   * @returns {StatusUpdater} returns `this` so you can chain .refetchOnlineData()
+   */
+  public setStatusFileUrl (url: string): StatusUpdater {
+    if (!Util.validators.isUrl(url)) {
+      throw new Error('Invalid statuses URL')
+    }
+    this.statusUrl = url
+
+    return this
   }
 
   /**

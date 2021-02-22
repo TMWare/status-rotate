@@ -1,3 +1,11 @@
+### 1.2.0 / 00-01-2021
+
+Features:
+
+- Periodic status updates
+- You can now set a remote status file url after initializing
+- Remote status data can now be re-fetched
+
 ### 1.1.1 / 28-01-2021
 
 Definitions:
