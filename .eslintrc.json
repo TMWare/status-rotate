@@ -2,7 +2,7 @@
   "extends": ["@tmware", "@tmware/eslint-config-typescript"],
   "parserOptions": {
     "ecmaVersion": 12,
-    "tsconfigRootDir": ".", // __dirname
+    "tsconfigRootDir": ".",
     "project": "./tsconfig.json"
   },
   "rules": {
