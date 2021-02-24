@@ -117,11 +117,11 @@
     eslint-plugin-promise "^4.2.1"
 
 "@tmware/jitsuyo@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.4.1.tgz#7ccd87f0f3da3ed5356bbbacd17c24261eacb473"
-  integrity sha512-6Lowf3Da907b67DmEcsQQV1+9FJJ0xsxFkILKHvRMX4Z4XJb59DZ28Ed4HxhIDg6mVXyClf0h8AwKZcwY6f14w==
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.5.0.tgz#6523e0e818a4bcbc3a0a2d2b0bd7a16737cb527c"
+  integrity sha512-Jdu7USWlRXj38+jbQwXpTQIkPEE3jWtK0qZ4SK0ytsnW+4RySVlkM8rdjaHWt31JoGf4kLQSKjtpeWxD4hkbBQ==
   dependencies:
-    acronymresolver "^1.1.2"
+    acronymresolver "^1.1.7"
 
 "@tmware/variable-parser@^1.1.2":
   version "1.1.2"
@@ -236,10 +236,10 @@ acorn@^7.4.0:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.4.1.tgz#feaed255973d2e77555b83dbc08851a6c63520fa"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acronymresolver@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/acronymresolver/-/acronymresolver-1.1.2.tgz#dcf574dd447038b732395ddcbbf94fe31bd53357"
-  integrity sha512-F4/u28XtC50iR2rNcKa3Eb9H14XmUdE7T0oQRt1uJ7HaHz403fiLE0GxlSdo+YfuEsiC9kN20p2V9UH/fRGyhQ==
+acronymresolver@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/acronymresolver/-/acronymresolver-1.1.7.tgz#b85adda3070ca0586610b4a38c188db6fdface4a"
+  integrity sha512-Et5/djDc6G4r5vTZqLfq34QVJh3DN0Nk0vRRSyZ6gaxccccfjaubJ+0S0WwL2advfPFjFivOquLknPjvi5/+0A==
 
 ajv@^6.10.0, ajv@^6.12.4:
   version "6.12.6"
