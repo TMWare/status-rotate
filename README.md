@@ -40,6 +40,31 @@ Supports any [discord.js] based bots, including [discord-akairo] or [discord.js-
 - [x] Web-based status message lists ([details](#web-based-status-messages))
 - [x] Periodically update the status
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Creating an instance of the status rotator:](#creating-an-instance-of-the-status-rotator)
+    - [Passing status messages](#passing-status-messages)
+    - [Actually using the Rotator](#actually-using-the-rotator)
+- [More advanced examples](#more-advanced-examples)
+  - [Automating Status Updates](#automating-status-updates)
+  - [Using Variables](#using-variables)
+    - [What you need to know](#what-you-need-to-know)
+    - [Defining and updating variables:](#defining-and-updating-variables)
+  - [Web-based status messages](#web-based-status-messages)
+- [Author](#author)
+- [🤝 Contributing](#-contributing)
+- [Show your support](#show-your-support)
+- [📝 License](#-license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Getting Started
 
 ### Installation
@@ -112,11 +137,11 @@ Updater.updateStatus({
 }) /* optionally, you can append a shard id */
 ```
 
-### More advanced examples
+## More advanced examples
 
 The section above only featured some very basic things [status rotate] can do. In the following you will learn how to automate status updates (update every `n` minutes) and how you can use values like your bot's guild count in these status messages.
 
-#### Automating Status Updates
+### Automating Status Updates
 
 If you want to have such an update done every once in a while, for example every 10 minutes, use the `.start()` method
 
@@ -162,7 +187,7 @@ bot.once('ready', () => {
 })
 ```
 
-#### Using Variables
+### Using Variables
 
 For now, you've only seen static status messages (i.e. they don't depend on some variable, like your bot's guild count), but this is the advanced section so we'll learn how to do that as well.
 
@@ -183,12 +208,12 @@ const Updater = new StatusUpdater(bot, statusMessages)
 
 For more information on the under-the-hood workings of variables, see [@tmware/variable-parser](https://www.npmjs.com/package/@tmware/variable-parser).
 
-##### What you need to know
+#### What you need to know
 
 - Variables are identified (by default, yes you can change that), by strings in singular curly braces: `{someString}`
 - Before a variable can be parsed (replaced by it's value), **you must define that variable**.
 
-##### Defining and updating variables:
+#### Defining and updating variables:
 
 Updating and defining variables works exactly the same way. Using the `.updateParserData()` method, you pass an Object containing keys (which are the variable names) and values.
 This will merge the existing data (by default no data), with the Object you passed, keeping all existing data and only adding or overwriting key-value pairs you defined.
@@ -209,7 +234,7 @@ Updater.updateParserData({
 
 Since these values are not updated automatically, you should implement such a routine (see Automating)
 
-#### Web-based status messages
+### Web-based status messages
 
 If you want to keep your status messages out of your code, maybe you want to keep your code cleaner, or not produce so many changes just because you want to update your status messages, you can upload a `JSON` formatted file to the internet and have [status rotate] take care of the rest.
 
