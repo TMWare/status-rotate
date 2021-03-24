@@ -1,6 +1,6 @@
 {
   "name": "@tmware/status-rotate",
-  "version": "1.2.0",
+  "version": "1.2.1-development",
   "description": "Discord Bot Status rotation.",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",
@@ -21,14 +21,14 @@
     "lint": "eslint --cache --report-unused-disable-directives --ext .js,.ts --ignore-path .gitignore --ignore-path .eslintignore",
     "lint:fix": "yarn run lint src/ --fix",
     "preversion": "yarn run build && yarn test",
-    "prepublishOnly": "pinst --disable && yarn run build && yarn test",
-    "postpublish": "pinst --enable",
+    "prepublishOnly": "yarn run build && yarn test",
     "postversion": "git push && git push --tags",
-    "postinstall": "husky install"
+    "prepare": "husky install",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TMWare/status-rotate.git"
+    "url": "https://github.com/TMWare/status-rotate.git"
   },
   "author": "TMUniversal <me@tmuniversal.eu>",
   "license": "MIT",
@@ -52,7 +52,7 @@
   "homepage": "https://github.com/TMWare/status-rotate#readme",
   "peerDependencies": {},
   "dependencies": {
-    "@tmware/jitsuyo": "^1.4.1",
+    "@tmware/jitsuyo": "^1.5.0",
     "@tmware/variable-parser": "^1.1.2",
     "axios": "0.21.1",
     "discord-akairo": "^8.1.0",
@@ -62,11 +62,11 @@
     "@tmuniversal/ts": "^1.1.2",
     "@tmware/eslint-config": "^1.1.2",
     "@tmware/eslint-config-typescript": "^1.0.5",
-    "@types/node": "^14.14.31",
-    "eslint": "^7.20.0",
-    "husky": "^5.1.0",
-    "pinst": "^2.1.4",
-    "rimraf": "^3.0.2"
+    "@types/node": "^14.14.35",
+    "eslint": "^7.22.0",
+    "husky": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.4.2"
   },
   "keywords": [
     "discord",
