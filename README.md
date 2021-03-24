@@ -8,11 +8,11 @@
     <a href="https://github.com/tmware/status-rotate/actions">
       <img src="https://github.com/tmware/status-rotate/workflows/Build/badge.svg" />
     </a>
-    <a href="https://tmuniversal.eu/redirect/patreon">
-      <img src="https://img.shields.io/badge/Patreon-support_me-fa6956.svg?style=flat&logo=patreon" />
-    </a>
     <a href="https://www.npmjs.com/package/@tmware/status-rotate">
       <img src="https://img.shields.io/npm/dt/@tmware/status-rotate" />
+    </a>
+    <a href="https://tmuniversal.eu/redirect/patreon">
+      <img src="https://img.shields.io/badge/Patreon-support_me-fa6956.svg?style=flat&logo=patreon" />
     </a>
     <br />
     <a href="https://bundlephobia.com/result?p=@tmware/status-rotate">
@@ -256,10 +256,26 @@ Updater.setStatusFileUrl(
 ).refetchOnlineData()
 ```
 
-## License
+## Author
 
-Please refer to the [LICENSE](LICENSE.md) file.
+👤 **TMUniversal**
 
-[status rotate]: https://github.com/TMWare/status-rotate
-[discord.js]: https://www.npmjs.com/package/discord.js
-[discord-akairo]: https://www.npmjs.com/package/discord-akairo
+* Website: [tmuniversal.eu](https://tmuniversal.eu)
+* Github: [@TMUniversal](https://github.com/TMUniversal)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TMWare/status-rotate/issues). You can also take a look at the [contributing guide](https://github.com/TMWare/status-rotate/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+<a href="https://www.patreon.com/tmuni">
+  <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
+</a>
+
+## 📝 License
+
+Copyright © 2020 - 2021 [TMUniversal](https://github.com/TMUniversal).<br />
+This project is [MIT](https://github.com/TMWare/status-rotate/blob/master/LICENSE) licensed.
