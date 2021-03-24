@@ -12,6 +12,7 @@ updates:
       - tmuniversal
     labels:
       - dependencies
+    target-branch: dev
     commit-message:
       prefix: fix
       prefix-development: chore

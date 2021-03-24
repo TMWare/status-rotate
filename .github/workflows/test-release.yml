@@ -1,15 +1,10 @@
-name: Build
+name: Test Release
 
-on:
-  push:
-    branches: [master, dev]
-  pull_request:
-    branches: [master, dev]
+on: pull_request
 
 jobs:
-  build:
+  test_publish:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
@@ -33,6 +28,8 @@ jobs:
 
       - name: Install Dependencies
         if: steps.cache-modules.outputs.cache-hit != 'true'
+        env:
+          CI: true
         run: yarn install
 
       - name: Build
@@ -40,3 +37,13 @@ jobs:
 
       - name: Test the build
         run: yarn test
+      -
+        env:
+          CI: true
+          GH_TOKEN: "${{ secrets.GH_TOKEN }}"
+          GITHUB_HEAD_REF: $GITHUB_HEAD_REF
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          NPM_TOKEN: "${{ secrets.NPM_TOKEN }}"
+        run: |
+            echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" > /home/runner/work/_temp/.npmrc
+            npx semantic-release --dry-run --debug -b $GITHUB_HEAD_REF
