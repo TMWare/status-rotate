@@ -279,3 +279,7 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 - 2021 [TMUniversal](https://github.com/TMUniversal).<br />
 This project is [MIT](https://github.com/TMWare/status-rotate/blob/master/LICENSE) licensed.
+
+[status rotate]: https://github.com/TMWare/status-rotate
+[discord.js]: https://www.npmjs.com/package/discord.js
+[discord-akairo]: https://www.npmjs.com/package/discord-akairo
