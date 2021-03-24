@@ -1,6 +1,6 @@
 {
   "name": "@tmware/status-rotate",
-  "version": "1.2.1-development",
+  "version": "1.2.1",
   "description": "Discord Bot Status rotation.",
   "main": "dist/index.js",
   "types": "typings/index.d.ts",

@@ -1,3 +1,26 @@
+## [1.2.1](https://github.com/TMWare/status-rotate/compare/v1.2.0...v1.2.1) (2021-03-24)
+
+
+### Chores
+
+* **git:** update .gitattributes ([399e557](https://github.com/TMWare/status-rotate/commit/399e557b39ed6de85567bff0f7b1338d9034aefd))
+* **merge:** Merge pull request [#90](https://github.com/TMWare/status-rotate/issues/90) from TMWare/dev ([842f9ab](https://github.com/TMWare/status-rotate/commit/842f9ab06a1e11a65f11cc1c8d3909fd7fd9aa29))
+* **node:** lock node version to 15.11.0 ([1f7fd4b](https://github.com/TMWare/status-rotate/commit/1f7fd4bcd715498486072a8d0888d2ec59d33941))
+* **yarn:** enable offline cache ([b1c2feb](https://github.com/TMWare/status-rotate/commit/b1c2feb2f0f8e52c3eb0d3f23b297b6fb31df298))
+* 🤖 update husky files ([d59406e](https://github.com/TMWare/status-rotate/commit/d59406e91dd16f52957aa030a74218b9cf4b7b09))
+* 🤖 update packages (yarn.lock) ([d314cde](https://github.com/TMWare/status-rotate/commit/d314cde4c758281c0c3aaf56800ab7d8d37b51a5))
+* remove unnecessary comment from eslintrc ([cd6ae7b](https://github.com/TMWare/status-rotate/commit/cd6ae7b0a9be1b54eb9f19d0b7e574fb00e8bfcb))
+
+
+### Continuous Integration
+
+* **dependabot:** define target branch: dev ([f5cc364](https://github.com/TMWare/status-rotate/commit/f5cc364cf6dabe0a3ac2f229e217d09c8a5918c8))
+* **testing:** update node workflow ([c4ce6ab](https://github.com/TMWare/status-rotate/commit/c4ce6ab3af53eb1f6c388b2c051b5a868c4ce2a2))
+* **workflow:** automerge dependency PRs ([3621065](https://github.com/TMWare/status-rotate/commit/36210653ee5c696d6070d5379624d379b5e26327))
+* **workflow:** create automerge.yml ([cdb153a](https://github.com/TMWare/status-rotate/commit/cdb153aa8d8c11674e2cc4102929e46968c637d9))
+* **workflow:** use semantic-release ([84c2212](https://github.com/TMWare/status-rotate/commit/84c22123e9a6b0479b4aa8fb9f6ba02825227069))
+* 🎡 add semantic-release ([b7702c3](https://github.com/TMWare/status-rotate/commit/b7702c3af8d941d676653112b334b5e6263a421b))
+
 ### 1.2.0 / 22-02-2021
 
 Features:
