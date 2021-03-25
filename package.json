@@ -8,6 +8,10 @@
     "require": "./dist/index.js",
     "import": "./index.esm.mjs"
   },
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.4 <2"
+  },
   "files": [
     "dist",
     "index.esm.mjs",
