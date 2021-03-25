@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-yarn commitlint --edit 
+[ "$CI" != true ] && yarn commitlint --edit || true
