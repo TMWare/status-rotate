@@ -1,2 +1,4 @@
-node_modules
-dist
+.yarn/
+dist/
+node_modules/
+coverage/
