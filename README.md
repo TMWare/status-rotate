@@ -38,13 +38,12 @@ Supports any [discord.js] based bots, including [discord-akairo] or [discord.js-
 - [x] Customize selection of status messages/activities ([details](#passing-status-messages))
 - [x] Variable support (i.e. show how many servers your bot has) ([details](#using-variables))
 - [x] Web-based status message lists ([details](#web-based-status-messages))
-- [x] Periodically update the status
+- [x] Periodically update the status ([details](#automating-status-updates))
 
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [Getting Started](#getting-started)
   - [Installation](#installation)
@@ -59,9 +58,9 @@ Supports any [discord.js] based bots, including [discord-akairo] or [discord.js-
     - [Defining and updating variables:](#defining-and-updating-variables)
   - [Web-based status messages](#web-based-status-messages)
 - [Author](#author)
-- [🤝 Contributing](#-contributing)
+- [Contributing](#contributing)
 - [Show your support](#show-your-support)
-- [📝 License](#-license)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -288,7 +287,7 @@ Updater.setStatusFileUrl(
 * Website: [tmuniversal.eu](https://tmuniversal.eu)
 * Github: [@TMUniversal](https://github.com/TMUniversal)
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/TMWare/status-rotate/issues). You can also take a look at the [contributing guide](https://github.com/TMWare/status-rotate/blob/master/CONTRIBUTING.md).
 
@@ -300,7 +299,7 @@ Give a ⭐️ if this project helped you!
   <img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
 
-## 📝 License
+## License
 
 Copyright © 2020 - 2021 [TMUniversal](https://github.com/TMUniversal).<br />
 This project is [MIT](https://github.com/TMWare/status-rotate/blob/master/LICENSE) licensed.
