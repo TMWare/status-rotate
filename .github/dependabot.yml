@@ -12,6 +12,7 @@ updates:
       - tmuniversal
     labels:
       - dependencies
+      - automerge
     target-branch: dev
     commit-message:
       prefix: fix
