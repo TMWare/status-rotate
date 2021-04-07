@@ -469,9 +469,9 @@
     acronymresolver "^1.1.7"
 
 "@tmware/semantic-release-npm-github-publish@^1.4.1":
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/@tmware/semantic-release-npm-github-publish/-/semantic-release-npm-github-publish-1.4.1.tgz#68ea11f6a755e74025e907a400ce6ea960cdbfa8"
-  integrity sha512-CCJ9LHI3lEpciyAVL9+IkwpDtQekFdAAv33W+gBWdrUw+dnpNV+6SW0SusuTHaua4OY472SXxjPJFrtaioNSgg==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@tmware/semantic-release-npm-github-publish/-/semantic-release-npm-github-publish-1.4.2.tgz#916c0d206685ec166d858e3bf9692d3678684425"
+  integrity sha512-rYUtdccxUliv85OaQ4hrHY04lIok44S00QxIS/PRhnRaQt8tw1Bn3IHcBMBdS9xxTUPPSC68fc/FV01j0XVl3w==
   dependencies:
     "@semantic-release/changelog" "^5.0.1"
     "@semantic-release/commit-analyzer" "^8.0.1"
