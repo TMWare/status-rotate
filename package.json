@@ -56,7 +56,7 @@
   "homepage": "https://github.com/TMWare/status-rotate#readme",
   "peerDependencies": {},
   "dependencies": {
-    "@tmware/jitsuyo": "^1.5.0",
+    "@tmware/jitsuyo": "^1.5.1",
     "@tmware/variable-parser": "^1.1.3",
     "axios": "0.21.1",
     "discord-akairo": "^8.1.0",
