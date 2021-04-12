@@ -586,10 +586,10 @@
     eslint-plugin-node "^11.1.0"
     eslint-plugin-promise "^4.2.1"
 
-"@tmware/jitsuyo@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.5.0.tgz#6523e0e818a4bcbc3a0a2d2b0bd7a16737cb527c"
-  integrity sha512-Jdu7USWlRXj38+jbQwXpTQIkPEE3jWtK0qZ4SK0ytsnW+4RySVlkM8rdjaHWt31JoGf4kLQSKjtpeWxD4hkbBQ==
+"@tmware/jitsuyo@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.5.1.tgz#eccb7ec145735a6fa8add61b78f429cbce05893e"
+  integrity sha512-aizViPvStf7/G5AYHp6bBicHFiTXTbM4NFgvj8fMXv1hjIR1aDKGJ6teSmFktmJDQE501+C2bVKIe4OqVrpACQ==
   dependencies:
     acronymresolver "^1.1.7"
 
