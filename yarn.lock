@@ -586,10 +586,10 @@
     eslint-plugin-node "^11.1.0"
     eslint-plugin-promise "^4.2.1"
 
-"@tmware/jitsuyo@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.5.0.tgz#6523e0e818a4bcbc3a0a2d2b0bd7a16737cb527c"
-  integrity sha512-Jdu7USWlRXj38+jbQwXpTQIkPEE3jWtK0qZ4SK0ytsnW+4RySVlkM8rdjaHWt31JoGf4kLQSKjtpeWxD4hkbBQ==
+"@tmware/jitsuyo@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.5.1.tgz#eccb7ec145735a6fa8add61b78f429cbce05893e"
+  integrity sha512-aizViPvStf7/G5AYHp6bBicHFiTXTbM4NFgvj8fMXv1hjIR1aDKGJ6teSmFktmJDQE501+C2bVKIe4OqVrpACQ==
   dependencies:
     acronymresolver "^1.1.7"
 
@@ -1955,9 +1955,9 @@ eslint-visitor-keys@^2.0.0:
   integrity sha512-QudtT6av5WXels9WjIM7qz1XD1cWGvX4gGXvp/zBn9nXG02D0utdU3Em2m/QjTnrsk6bBjmCygl3rmj118msQQ==
 
 eslint@^7.23.0:
-  version "7.23.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.23.0.tgz#8d029d252f6e8cf45894b4bee08f5493f8e94325"
-  integrity sha512-kqvNVbdkjzpFy0XOszNwjkKzZ+6TcwCQ/h+ozlcIWwaimBBuhlQ4nN6kbiM2L+OjDcznkTJxzYfRFH92sx4a0Q==
+  version "7.24.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.24.0.tgz#2e44fa62d93892bfdb100521f17345ba54b8513a"
+  integrity sha512-k9gaHeHiFmGCDQ2rEfvULlSLruz6tgfA8DEn+rY9/oYPFFTlz55mM/Q/Rij1b2Y42jwZiK3lXvNTw6w6TXzcKQ==
   dependencies:
     "@babel/code-frame" "7.12.11"
     "@eslint/eslintrc" "^0.4.0"
