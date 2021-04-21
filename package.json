@@ -65,13 +65,13 @@
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
-    "@tmuniversal/ts": "^1.1.2",
+    "@tmuniversal/ts": "^1.2.1",
     "@tmware/eslint-config": "^1.1.2",
     "@tmware/eslint-config-typescript": "^1.0.5",
     "@tmware/semantic-release-npm-github-publish": "^1.4.2",
-    "@types/node": "^14.14.37",
+    "@types/node": "^14.14.41",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "^7.23.0",
+    "eslint": "^7.24.0",
     "husky": "^6.0.0",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.4.2"
