@@ -57,7 +57,7 @@
   "peerDependencies": {},
   "dependencies": {
     "@tmware/jitsuyo": "^1.5.1",
-    "@tmware/variable-parser": "^1.1.3",
+    "@tmware/variable-parser": "^1.1.4",
     "axios": "0.21.1",
     "discord-akairo": "^8.1.0",
     "discord.js": "^12.5.3"
@@ -70,6 +70,7 @@
     "@tmware/eslint-config-typescript": "^1.0.7",
     "@tmware/semantic-release-npm-github-publish": "^1.4.2",
     "@types/node": "^14.14.41",
+    "@types/ws": "^7.4.1",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.24.0",
     "husky": "^6.0.0",

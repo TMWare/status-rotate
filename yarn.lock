@@ -600,10 +600,10 @@
     "@semantic-release/npm" "^7.0.10"
     "@semantic-release/release-notes-generator" "^9.0.2"
 
-"@tmware/variable-parser@^1.1.3":
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/@tmware/variable-parser/-/variable-parser-1.1.3.tgz#30f7c2539c60450870ec4573292361440e5518f8"
-  integrity sha512-+8tsUSuvclhkZ5AvMp7VSlsUifQ49FO2iIQlfdOJhZQebZ/Q/30fZ9PI8OSc8jZodnd8wg22f7YAOHzd9Je+XQ==
+"@tmware/variable-parser@^1.1.4":
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/@tmware/variable-parser/-/variable-parser-1.1.4.tgz#dc60edf712e7f5a00918cb991f517440a433dfa0"
+  integrity sha512-QlxBvApVgCcNE6FGybwQh6R8OQchwIIC7pvK4MhbOH3lH4WNOxy73uoJ4iEBEPuNBpFw2C6Rzew6uorbPPIVWA==
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -625,7 +625,7 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha512-fZQQafSREFyuZcdWFAExYjBiCL7AUCdgsk80iO0q4yihYYdcIiH28CcuPTGFgLOCC8RlW49GSQxdHwZP+I7CNg==
 
-"@types/node@^14.14.41":
+"@types/node@*", "@types/node@^14.14.41":
   version "14.14.41"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.41.tgz#d0b939d94c1d7bd53d04824af45f1139b8c45615"
   integrity sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g==
@@ -644,6 +644,13 @@
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/@types/retry/-/retry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha512-wWKOClTTiizcZhXnPY4wikVAwmdYHp8q6DmC+EJUzAMsycb7HB32Kh9RN4+0gExjmPmZSAQjgURXIGATPegAvA==
+
+"@types/ws@^7.4.1":
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-7.4.1.tgz#49eacb15a0534663d53a36fbf5b4d98f5ae9a73a"
+  integrity sha512-ISCK1iFnR+jYv7+jLNX0wDqesZ/5RAeY3wUx6QaphmocphU61h+b+PHjS18TF4WIPTu/MMzxIq2PHr32o2TS5Q==
+  dependencies:
+    "@types/node" "*"
 
 "@typescript-eslint/eslint-plugin@^4.22.0":
   version "4.22.0"
