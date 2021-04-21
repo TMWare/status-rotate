@@ -3,6 +3,8 @@
   "extends": "@tmuniversal/ts/config",
   "compilerOptions": {
     "outDir": "./dist",
+    "declaration": false,
+    "sourceMap": false,
     "inlineSources": false,
     "inlineSourceMap": false
   },

@@ -2,7 +2,7 @@
 'use strict'
 
 import Util from '@tmware/jitsuyo'
-import VariableParser from '@tmware/variable-parser'
+import VariableParser, { VariableParserData } from '@tmware/variable-parser'
 import Axios from 'axios'
 import { AkairoClient } from 'discord-akairo'
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
@@ -18,13 +18,13 @@ const defaultStatuses: ActivityOptions[] = [
 export type DiscordClient = AkairoClient | DJSClient
 
 export default class StatusUpdater {
-  private readonly client: DiscordClient
-  private readonly parser: VariableParser
+  private readonly client!: DiscordClient
+  private readonly parser!: VariableParser
   public statusUrl?: string
-  private _statuses: ActivityOptions[]
-  private isReady: boolean
+  private _statuses!: ActivityOptions[]
+  private isReady!: boolean
   // eslint-disable-next-line no-undef
-  private timer: NodeJS.Timeout | false
+  private timer!: NodeJS.Timeout | false
   /**
    * A status updater that can pull from the internet
    * @param {DiscordClient} client discord.js (extending) client
@@ -160,7 +160,7 @@ export default class StatusUpdater {
    * @example
    * updateParserData({ someName: "something" })
    */
-  public updateParserData (data): Object {
+  public updateParserData (data: VariableParserData): Object {
     return this.parser.updateData(data)
   }
 
@@ -195,22 +195,23 @@ export default class StatusUpdater {
    * @returns {Promise<Presence>}
    */
   public async updateStatus (activity?: ActivityOptions, shardId?: number): Promise<Presence> {
+    if (!this.client.user) throw new Error('cannot update status of undefined client user')
     this._updateParserData()
-    const $activity = this.getSafeActivity(activity) || this._chooseActivity()
+    const $activity = activity ? this.getSafeActivity(activity) : this._chooseActivity()
     if (shardId) $activity.shardID = shardId
     return await this.client.user.setActivity($activity)
   }
 
   private _chooseActivity (): ActivityOptions {
-    return this.getSafeActivity(Util.arrayHelper.pickRandom(this.statuses))
+    return this.getSafeActivity(Util.arrayHelper.pickRandom(this.statuses) as ActivityOptions)
   }
 
   private getSafeActivity (info: ActivityOptions): ActivityOptions {
-    if (!info) return
     return {
       ...info,
+      // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
       type: info.type || 'PLAYING',
-      name: this.parser.parse(info.name) || 'a game'
+      name: info.name ? this.parser.parse(info.name) : 'a game'
     }
   }
 }
