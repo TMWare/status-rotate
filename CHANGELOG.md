@@ -1,3 +1,25 @@
+## [1.2.3](https://github.com/TMWare/status-rotate/compare/v1.2.2...v1.2.3) (2021-04-21)
+
+
+### Bug Fixes
+
+* **deps:** add missing peer dependency typescript ([beb5954](https://github.com/TMWare/status-rotate/commit/beb59546dacf98b2367891c747b65dbf0a6e959b))
+* **deps:** bump @tmware/jitsuyo from 1.5.0 to 1.5.1 ([#107](https://github.com/TMWare/status-rotate/issues/107)) ([3963bb5](https://github.com/TMWare/status-rotate/commit/3963bb5dac9ad54f492bd6eb4e15111f23b8af03))
+
+
+### Chores
+
+* **deps:** bump @tmware/variable-parser from 1.1.3 to 1.1.4 ([c943b1a](https://github.com/TMWare/status-rotate/commit/c943b1a06ce2118e3c90672e1dea91f875c56ead))
+* **deps:** upgrade all dependencies ([b94a5f2](https://github.com/TMWare/status-rotate/commit/b94a5f229c256553791eb704e95ce2d7371da1ab))
+* **deps-dev:** bump @tmuniversal/ts from 1.1.2 to 1.2.1 ([#110](https://github.com/TMWare/status-rotate/issues/110)) ([96b307f](https://github.com/TMWare/status-rotate/commit/96b307f181c3d0c55b078a7885bacd9683b8941f))
+* **deps-dev:** bump @types/node from 14.14.37 to 14.14.41 ([#109](https://github.com/TMWare/status-rotate/issues/109)) ([3206d34](https://github.com/TMWare/status-rotate/commit/3206d3434fc13fb095aedee1318b406790c577e0))
+* **deps-dev:** bump eslint from 7.23.0 to 7.24.0 ([#106](https://github.com/TMWare/status-rotate/issues/106)) ([bcdc7b5](https://github.com/TMWare/status-rotate/commit/bcdc7b549633a59ad1292438feab5ec714e12b80))
+* **dev-deps:** bump @tmware/eslint-config-typescript from 1.0.5 to 1.0.7 ([7675015](https://github.com/TMWare/status-rotate/commit/7675015e624bc70aa37d66ff8728995aeb0337f7))
+* **dev-deps:** upgrade all dependencies ([735d956](https://github.com/TMWare/status-rotate/commit/735d956f8216c4c9ea5f9de6fc3ecfacd8d5d6c3))
+* **ts:** disable source maps ([b8ce158](https://github.com/TMWare/status-rotate/commit/b8ce158b128a96aec87d375cc3492ee224091163))
+* **ts:** follow stricter rules (part two) ([27b5f4b](https://github.com/TMWare/status-rotate/commit/27b5f4b1458d4e43fc2de8ea31f6ff9c3e3ab7cd))
+* **types:** follow stricter typescript rules ([6b2c0bb](https://github.com/TMWare/status-rotate/commit/6b2c0bbd3640f294e7a11a655f8a57b0e1bcde15))
+
 ## [1.2.2](https://github.com/TMWare/status-rotate/compare/v1.2.1...v1.2.2) (2021-04-09)
 
 
