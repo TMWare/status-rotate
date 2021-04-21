@@ -2,7 +2,7 @@
 'use strict'
 
 import Util from '@tmware/jitsuyo'
-import VariableParser from '@tmware/variable-parser'
+import VariableParser, { VariableParserData } from '@tmware/variable-parser'
 import Axios from 'axios'
 import { AkairoClient } from 'discord-akairo'
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
@@ -160,7 +160,7 @@ export default class StatusUpdater {
    * @example
    * updateParserData({ someName: "something" })
    */
-  public updateParserData (data): Object {
+  public updateParserData (data: VariableParserData): Object {
     return this.parser.updateData(data)
   }
 
@@ -209,6 +209,7 @@ export default class StatusUpdater {
     if (!info) return
     return {
       ...info,
+      // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
       type: info.type || 'PLAYING',
       name: this.parser.parse(info.name) || 'a game'
     }
