@@ -555,9 +555,9 @@
     read-pkg-up "^7.0.0"
 
 "@tmuniversal/ts@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@tmuniversal/ts/-/ts-1.1.2.tgz#0fd484a561665187501f143ace2e997b4e49b600"
-  integrity sha512-lXULW57XYA7tSGb3+FFH/lassiYao+24yhCJGWqqYKmGSEWR7PndyAlwDzPahxE0zx1wKayE2Y84EEFiLO9sCA==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@tmuniversal/ts/-/ts-1.2.1.tgz#5c333f2f276586c12df86d428123dd1ec0859dd7"
+  integrity sha512-6+LoswEsTfFpXCEy/iNLaiadDPbANVGiT/vVpPOEbah7o/rQYKeBIzmzkNRGiLwPfBevRKri0B0LvOkEJEhYnQ==
 
 "@tmware/eslint-config-typescript@^1.0.5":
   version "1.0.5"
