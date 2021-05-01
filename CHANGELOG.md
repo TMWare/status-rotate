@@ -1,3 +1,18 @@
+## [1.2.4](https://github.com/TMWare/status-rotate/compare/v1.2.3...v1.2.4) (2021-05-01)
+
+
+### Bug Fixes
+
+* fix parsing of multiple variables in one status ([da316db](https://github.com/TMWare/status-rotate/commit/da316db98d97e22f809475018f55567d6149ff0d))
+* **deps:** upgrade all dependencies ([f193989](https://github.com/TMWare/status-rotate/commit/f193989297e551e9fbd8d6b7b54870dca13e61a6))
+
+
+### Chores
+
+* **deps-dev:** bump @types/node from 14.14.41 to 15.0.1 ([#114](https://github.com/TMWare/status-rotate/issues/114)) ([f829c9b](https://github.com/TMWare/status-rotate/commit/f829c9bafe3fbeaae8fe71c928268247370a6823))
+* **deps-dev:** bump @types/ws from 7.4.1 to 7.4.2 ([#115](https://github.com/TMWare/status-rotate/issues/115)) ([6c93119](https://github.com/TMWare/status-rotate/commit/6c9311952abc320cffe852afa683eccc192fa8ea))
+* **deps-dev:** bump eslint from 7.24.0 to 7.25.0 ([#112](https://github.com/TMWare/status-rotate/issues/112)) ([7c9d3e9](https://github.com/TMWare/status-rotate/commit/7c9d3e9ce92fda90f59c1f7b51e708583732f300))
+
 ## [1.2.3](https://github.com/TMWare/status-rotate/compare/v1.2.2...v1.2.3) (2021-04-21)
 
 
