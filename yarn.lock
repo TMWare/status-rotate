@@ -46,9 +46,9 @@
     yargs "^16.2.0"
 
 "@commitlint/config-conventional@^12.1.2":
-  version "12.1.2"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-12.1.2.tgz#8725fea1ddc392f16b4203a34e2f0da5d1ac16ad"
-  integrity sha512-c1VYAjM/6+RBvNeqMM9ooYKw2uUnHQiZWMEpKXGqPlawr6o0+vVytKQxOFfmvOnVo3TqqlNYYB/bk6sRo/zUUg==
+  version "12.1.4"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-12.1.4.tgz#95bbab622f117a8a3e49f95917b08655040c66a8"
+  integrity sha512-ZIdzmdy4o4WyqywMEpprRCrehjCSQrHkaRTVZV411GyLigFQHlEBSJITAihLAWe88Qy/8SyoIe5uKvAsV5vRqQ==
   dependencies:
     conventional-changelog-conventionalcommits "^4.3.1"
 
