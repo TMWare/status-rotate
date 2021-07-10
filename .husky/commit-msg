@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-[ "$CI" != true ] && yarn commitlint --edit $1 || true
+if [ "$CI" != true ]; then
+  npx --no-install commitlint --edit $1
+fi
