@@ -634,9 +634,9 @@
     "@semantic-release/release-notes-generator" "^9.0.2"
 
 "@tmware/variable-parser@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@tmware/variable-parser/-/variable-parser-1.2.0.tgz#7b7484865e2d52f0447cb6e109c65f789d7845d6"
-  integrity sha512-k4er2dAUmttXAJFZ2s+MuRVIsKVSAqtK5tb8GaNdP0YxNi+LVAc96OTx5o1l8L6gnYENpZDZsddH3WP3kFRh0Q==
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@tmware/variable-parser/-/variable-parser-1.2.1.tgz#58fbe73133cd84abb5295e7aa9b5a1c7a28e9733"
+  integrity sha512-xnHgyWbK3U5ie52EDZxUTW5WslgkNrDal346IsNx30uL3u+qjnTSjXpyrpQeCZC4OyGYktLRvTz1ITT2TfzlPQ==
 
 "@tootallnate/once@1":
   version "1.1.2"
