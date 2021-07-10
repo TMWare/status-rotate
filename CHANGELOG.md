@@ -1,3 +1,41 @@
+## [1.2.5](https://github.com/TMWare/status-rotate/compare/v1.2.4...v1.2.5) (2021-07-10)
+
+
+### Bug Fixes
+
+* **deps:** bump @tmware/variable-parser from 1.2.0 to 1.2.1 ([#145](https://github.com/TMWare/status-rotate/issues/145)) ([50abd5d](https://github.com/TMWare/status-rotate/commit/50abd5dbe36d447f80cdfbc904f609ea71c1a5cd))
+
+
+### Chores
+
+* **deps:** bump normalize-url from 6.0.0 to 6.0.1 ([#138](https://github.com/TMWare/status-rotate/issues/138)) ([8fce247](https://github.com/TMWare/status-rotate/commit/8fce247d06d7f563853ac4c304469568e5bcf87f))
+* **deps:** bump trim-newlines from 3.0.0 to 3.0.1 ([#139](https://github.com/TMWare/status-rotate/issues/139)) ([5ffc202](https://github.com/TMWare/status-rotate/commit/5ffc202f46f1833f2c1dc19a9ca0ca56160b71b3))
+* **deps:** bump ws from 7.4.5 to 7.4.6 ([#132](https://github.com/TMWare/status-rotate/issues/132)) ([a0c7ab8](https://github.com/TMWare/status-rotate/commit/a0c7ab8a604c6141a4ed4eee0baf20f6e51ff6bb))
+* **deps:** upgrade all dependencies ([1955dca](https://github.com/TMWare/status-rotate/commit/1955dca030b360139c60e8a0252355b6d08ae8f2))
+* **deps:** upgrade all dependencies ([d18e0ec](https://github.com/TMWare/status-rotate/commit/d18e0ec1090785c8ab34a3f3070ca52fbd40a2db))
+* **deps-dev:** bump @commitlint/cli from 12.1.2 to 12.1.4 ([#125](https://github.com/TMWare/status-rotate/issues/125)) ([c160f5d](https://github.com/TMWare/status-rotate/commit/c160f5d8dae2c5cc41ea3da694f56296d401ba29))
+* **deps-dev:** bump @commitlint/config-conventional ([#124](https://github.com/TMWare/status-rotate/issues/124)) ([e48e756](https://github.com/TMWare/status-rotate/commit/e48e756ed7e03aab0c131b5e35eeb3d2e31d586c))
+* **deps-dev:** bump @types/node from 15.0.1 to 15.3.1 ([#127](https://github.com/TMWare/status-rotate/issues/127)) ([71f1565](https://github.com/TMWare/status-rotate/commit/71f1565450c9fe268d68e2dd81b278be1828bc7c))
+* **deps-dev:** bump @types/node from 15.12.2 to 16.0.2 ([#156](https://github.com/TMWare/status-rotate/issues/156)) ([cfa62fa](https://github.com/TMWare/status-rotate/commit/cfa62fa4b7a0a4e5e7011a28ba7d2a04fb57da71))
+* **deps-dev:** bump @types/node from 15.3.1 to 15.6.0 ([#128](https://github.com/TMWare/status-rotate/issues/128)) ([cfb7a1b](https://github.com/TMWare/status-rotate/commit/cfb7a1bfb48647be3a30a126c3d410d31d8edfdf))
+* **deps-dev:** bump @types/ws from 7.4.2 to 7.4.4 ([#119](https://github.com/TMWare/status-rotate/issues/119)) ([3ec39a6](https://github.com/TMWare/status-rotate/commit/3ec39a647bca1cf7cae54249fb551777d6d8662f))
+* **deps-dev:** bump @types/ws from 7.4.4 to 7.4.6 ([#152](https://github.com/TMWare/status-rotate/issues/152)) ([deef902](https://github.com/TMWare/status-rotate/commit/deef902627ddcf4966c0bb2f9ead627b13797cf1))
+* **deps-dev:** bump eslint from 7.25.0 to 7.26.0 ([#118](https://github.com/TMWare/status-rotate/issues/118)) ([f0dbfca](https://github.com/TMWare/status-rotate/commit/f0dbfcaf04b45c5b3ba9250f3353cfb74df56310))
+* **deps-dev:** bump eslint from 7.26.0 to 7.27.0 ([#129](https://github.com/TMWare/status-rotate/issues/129)) ([a5792b7](https://github.com/TMWare/status-rotate/commit/a5792b7e646997846af8ab4618c0a6481a557d2b))
+* **deps-dev:** bump eslint from 7.28.0 to 7.30.0 ([#153](https://github.com/TMWare/status-rotate/issues/153)) ([d9c592c](https://github.com/TMWare/status-rotate/commit/d9c592ceecdda5cdeb700aa1c2b3ef819ffc1c05))
+* **deps-dev:** bump husky from 6.0.0 to 7.0.1 ([#154](https://github.com/TMWare/status-rotate/issues/154)) ([6e6f72f](https://github.com/TMWare/status-rotate/commit/6e6f72fce7594047dbbd63b9dc340118a430cbfd))
+* **deps-dev:** bump semantic-release from 17.4.2 to 17.4.3 ([#122](https://github.com/TMWare/status-rotate/issues/122)) ([4a03aa1](https://github.com/TMWare/status-rotate/commit/4a03aa1e71a522022958f8b8a6a63d01e4cf1e91))
+* **deps-dev:** bump semantic-release from 17.4.3 to 17.4.4 ([#140](https://github.com/TMWare/status-rotate/issues/140)) ([a856172](https://github.com/TMWare/status-rotate/commit/a8561722eb130969966aedf194b14a88cc0e1162))
+* **deps-dev:** bump typescript from 4.3.2 to 4.3.5 ([#148](https://github.com/TMWare/status-rotate/issues/148)) ([5ab78ff](https://github.com/TMWare/status-rotate/commit/5ab78ff7559eea8a0482df9bc3d4484f581f9694))
+* **merge:** bump all dependencies ([#158](https://github.com/TMWare/status-rotate/issues/158)) ([13e6bb6](https://github.com/TMWare/status-rotate/commit/13e6bb6e9dec1d015218f2cf1e2e1edb0b89dbe5))
+* employ lint-staged ([08555b1](https://github.com/TMWare/status-rotate/commit/08555b1d94a91c1d14e8b70c0a720ece08f1c764))
+* remove empty templates ([50b9cfa](https://github.com/TMWare/status-rotate/commit/50b9cfa59adf43bff6b58833a2742185ab2a3027))
+
+
+### Miscellaneous
+
+* Merge branch 'master' into dev ([2a95c28](https://github.com/TMWare/status-rotate/commit/2a95c28d28ad7314af5266ae2031ea58019e5978))
+
 ## [1.2.4](https://github.com/TMWare/status-rotate/compare/v1.2.3...v1.2.4) (2021-05-01)
 
 
