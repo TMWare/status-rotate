@@ -48,8 +48,14 @@ export default class StatusUpdater {
         }
         this.statusUrl = statuses
       }
-      else if (Array.isArray(statuses)) this._statuses = statuses
-      else throw new Error('Invalid status options.')
+
+      else if (Array.isArray(statuses)) {
+        this._statuses = statuses
+      }
+
+      else {
+        throw new Error('Invalid status options.')
+      }
     }
 
     this.isReady = false
