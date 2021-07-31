@@ -41,6 +41,9 @@ export default class StatusUpdater {
   constructor (client: DiscordClient, statuses?: ActivityOptions[] | string) {
     this.client = client
     this.parser = new VariableParser()
+
+    this._statuses = []
+
     if (statuses) {
       if (typeof statuses === 'string') {
         if (!Util.validators.isUrl(statuses)) {
