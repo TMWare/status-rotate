@@ -1,3 +1,25 @@
+## [1.2.6](https://github.com/TMWare/status-rotate/compare/v1.2.5...v1.2.6) (2021-08-01)
+
+
+### Bug Fixes
+
+* **deps:** bump @tmware/jitsuyo from 1.6.4 to 1.6.5 ([#168](https://github.com/TMWare/status-rotate/issues/168)) ([04b929d](https://github.com/TMWare/status-rotate/commit/04b929db594b08b7fbbec7ec13ab18795e2a4b0b))
+* initialize status array ([384cc94](https://github.com/TMWare/status-rotate/commit/384cc942e725d3d296e7d6dfeb055542ddba7ddc))
+
+
+### Chores
+
+* **deps-dev:** bump @commitlint/cli from 13.0.0 to 13.1.0 ([#170](https://github.com/TMWare/status-rotate/issues/170)) ([b98284f](https://github.com/TMWare/status-rotate/commit/b98284fa47d5bf0579ed7d6dc5a2b7a754de1f73))
+* **deps-dev:** bump @commitlint/config-conventional ([#169](https://github.com/TMWare/status-rotate/issues/169)) ([9405602](https://github.com/TMWare/status-rotate/commit/940560261dc49be04ef3b00c8f1183ee258a6520))
+* **deps-dev:** bump @types/ws from 7.4.6 to 7.4.7 ([#164](https://github.com/TMWare/status-rotate/issues/164)) ([c3a1484](https://github.com/TMWare/status-rotate/commit/c3a14844e4fae5a6f5e72fcf5fb6ccef89925c0d))
+* **deps-dev:** bump eslint from 7.30.0 to 7.31.0 ([#161](https://github.com/TMWare/status-rotate/issues/161)) ([308ad4e](https://github.com/TMWare/status-rotate/commit/308ad4e939912fdfbd255d61e228344be40b86f6))
+* **deps-dev:** bump lint-staged from 11.0.0 to 11.1.1 ([#172](https://github.com/TMWare/status-rotate/issues/172)) ([2eeed69](https://github.com/TMWare/status-rotate/commit/2eeed694e75e9fcc8d5874c92ea0914ec0b5741a))
+
+
+### Styles
+
+* slight improvement to constructor readability ([42e001c](https://github.com/TMWare/status-rotate/commit/42e001cabcd62d72a8279d2ce166c404576f8065))
+
 ## [1.2.5](https://github.com/TMWare/status-rotate/compare/v1.2.4...v1.2.5) (2021-07-10)
 
 
