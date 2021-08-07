@@ -182,16 +182,21 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
    * Add a status to the possible statuses
    * @param {ActivityOptions} status ActivityOptions
    */
-  public async addStatus (status: ActivityOptions): Promise<ActivityOptions[]> {
+  public addStatus (status: ActivityOptions): ActivityOptions[] {
     if (!this.isReady) {
-      return await Promise.reject(new Error('StatusUpdater is not ready.'))
+      throw new Error('StatusUpdater is not ready.')
     }
+
+    if (!status.name) {
+      throw new Error('status must include at least a name')
+    }
+
     if (!this._statuses.includes(status)) {
       this._statuses.push(status)
-      return await Promise.resolve(this.statuses)
+      return this.statuses
     }
     else {
-      return await Promise.reject(new Error('Already included.'))
+      throw new Error('Already included.')
     }
   }
 
