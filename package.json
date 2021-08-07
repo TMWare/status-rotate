@@ -54,13 +54,18 @@
     }
   ],
   "homepage": "https://github.com/TMWare/status-rotate#readme",
-  "peerDependencies": {},
+  "peerDependencies": {
+    "discord.js": ">= 13.0.0"
+  },
+  "peerDependenciesMeta": {
+    "discord.js": {
+      "optional": false
+    }
+  },
   "dependencies": {
     "@tmware/jitsuyo": "^1.6.5",
     "@tmware/variable-parser": "^1.2.2",
-    "axios": "0.21.1",
-    "discord-akairo": "^8.1.0",
-    "discord.js": "^13.0.0"
+    "axios": "0.21.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
@@ -72,6 +77,7 @@
     "@types/node": "^16.4.13",
     "@types/ws": "^7.4.7",
     "cz-conventional-changelog": "3.3.0",
+    "discord.js": "^13.0.0",
     "eslint": "^7.32.0",
     "husky": "^7.0.1",
     "lint-staged": "^11.1.2",
