@@ -57,7 +57,7 @@ declare module '@tmware/status-rotate' {
      * Add a status to the possible statuses
      * @param {ActivityOptions} status ActivityOptions
      */
-    addStatus (status: ActivityOptions): Promise<ActivityOptions[]>
+    addStatus (status: ActivityOptions): ActivityOptions[]
     /**
      * An array of possible status messages (as ActivityOptions)
      * @type ActivityOptions[]
