@@ -94,6 +94,11 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
     if (this.timer !== false) {
       throw new Error('automatic status updates are already enabled')
     }
+
+    if (!this.statuses || this.statuses.length === 0) {
+      throw new Error('must have at least one status to choose from')
+    }
+
     this.timer = setInterval(
       () => {
         this.updateStatus()
@@ -204,7 +209,15 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
    * @returns {Promise<Presence>}
    */
   public async updateStatus (activity?: ActivityOptions, shardId?: number): Promise<Presence> {
-    if (!this.client.user) throw new Error('cannot update status of undefined client user')
+    if (!this.client.user) {
+      throw new Error('cannot update status of undefined client user')
+    }
+
+    if (!this.statuses || this.statuses.length === 0) {
+      throw new Error('must have at least one status to choose from')
+    }
+
+    // get current information about guild amounts etc. from client, feed it to parser
     this._updateParserData()
 
     const $activity = activity ? this._getSafeActivity(activity) : this._chooseActivity()
