@@ -9,7 +9,7 @@
     "import": "./index.esm.mjs"
   },
   "engines": {
-    "node": ">=14.0.0",
+    "node": ">=16.6.1",
     "yarn": ">=1.22.4 <2"
   },
   "files": [
