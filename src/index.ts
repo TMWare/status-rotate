@@ -43,6 +43,9 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
     this.parser = new VariableParser()
 
     this._statuses = []
+    this.timer = false
+
+    this.isReady = false
 
     if (statuses) {
       if (typeof statuses === 'string') {
@@ -60,8 +63,6 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
         throw new Error('Invalid status options.')
       }
     }
-
-    this.isReady = false
 
     this._init()
   }
