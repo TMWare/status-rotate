@@ -206,8 +206,8 @@ export default class StatusUpdater {
     if (!this.client.user) throw new Error('cannot update status of undefined client user')
     this._updateParserData()
     const $activity = activity ? this.getSafeActivity(activity) : this._chooseActivity()
-    if (shardId) $activity.shardID = shardId
-    return await this.client.user.setActivity($activity)
+    if (shardId) $activity.shardId = shardId
+    return this.client.user.setActivity($activity)
   }
 
   private _chooseActivity (): ActivityOptions {
