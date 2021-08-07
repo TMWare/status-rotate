@@ -206,21 +206,24 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
   public async updateStatus (activity?: ActivityOptions, shardId?: number): Promise<Presence> {
     if (!this.client.user) throw new Error('cannot update status of undefined client user')
     this._updateParserData()
-    const $activity = activity ? this.getSafeActivity(activity) : this._chooseActivity()
+
+    const $activity = activity ? this._getSafeActivity(activity) : this._chooseActivity()
+
     if (shardId) $activity.shardId = shardId
+
     return this.client.user.setActivity($activity)
   }
 
   private _chooseActivity (): ActivityOptions {
-    return this.getSafeActivity(Util.arrayHelper.pickRandom(this.statuses) as ActivityOptions)
+    return this._getSafeActivity(Util.arrayHelper.pickRandom(this.statuses) as ActivityOptions)
   }
 
-  private getSafeActivity (info: ActivityOptions): ActivityOptions {
+  private _getSafeActivity (options: ActivityOptions): ActivityOptions {
     return {
-      ...info,
+      ...options,
       // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-      type: info.type || 'PLAYING',
-      name: info.name ? this.parser.parse(info.name) : 'a game'
+      type: options.type || 'PLAYING',
+      name: options.name ? this.parser.parse(options.name) : 'a game'
     }
   }
 }
