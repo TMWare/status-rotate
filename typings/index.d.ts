@@ -1,14 +1,8 @@
 declare module '@tmware/status-rotate' {
-  import { AkairoClient } from 'discord-akairo'
   import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
-  type DiscordClient = AkairoClient | DJSClient
 
-  class StatusUpdater {
-    private readonly client
-    private readonly parser
+  class StatusUpdater <ClientType extends DJSClient = DJSClient> {
     statusUrl?: string
-    private readonly _statuses
-    private readonly isReady
     /**
      * A status updater that can pull from the internet
      * @param {DiscordClient} client discord.js (extending) client
@@ -22,7 +16,7 @@ declare module '@tmware/status-rotate' {
      *
      * @example const StatusUpdater = new StatusUpdater(client, 'https://example.com/statuses.json')
      */
-    constructor (client: DiscordClient, statuses?: ActivityOptions[] | string)
+    constructor (client: ClientType, statuses?: ActivityOptions[] | string)
     /**
      * Start automatically switching the client user's status
      * @param {Number} delay time between status updates in milliseconds

@@ -4,7 +4,6 @@
 import Util from '@tmware/jitsuyo'
 import VariableParser, { VariableParserData } from '@tmware/variable-parser'
 import Axios from 'axios'
-import { AkairoClient } from 'discord-akairo'
 import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
 
 const defaultStatuses: ActivityOptions[] = [
@@ -15,16 +14,17 @@ const defaultStatuses: ActivityOptions[] = [
   { type: 'WATCHING', name: '{guilds} servers' }
 ]
 
-export type DiscordClient = AkairoClient | DJSClient
-
-export default class StatusUpdater {
-  private readonly client!: DiscordClient
+export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
+  private readonly client!: ClientType
   private readonly parser!: VariableParser
+
   public statusUrl?: string
+
   private _statuses!: ActivityOptions[]
   private isReady!: boolean
   // eslint-disable-next-line no-undef
   private timer!: NodeJS.Timeout | false
+
   /**
    * A status updater that can pull from the internet
    * @param {DiscordClient} client discord.js (extending) client
@@ -38,7 +38,7 @@ export default class StatusUpdater {
    *
    * @example const StatusUpdater = new StatusUpdater(client, 'https://example.com/statuses.json')
    */
-  constructor (client: DiscordClient, statuses?: ActivityOptions[] | string) {
+  constructor (client: ClientType, statuses?: ActivityOptions[] | string) {
     this.client = client
     this.parser = new VariableParser()
 
