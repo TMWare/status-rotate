@@ -1,3 +1,40 @@
+## [1.2.7](https://github.com/TMWare/status-rotate/compare/v1.2.6...v1.2.7) (2021-08-07)
+
+
+### Bug Fixes
+
+* fix internal timer handling ([fa6884f](https://github.com/TMWare/status-rotate/commit/fa6884febd45753856e0b9ad3d1cd629dce7b6c8))
+* improve error handling ([d648d7e](https://github.com/TMWare/status-rotate/commit/d648d7e6cb9694c0568d3a7a9c9d160e64222d81))
+* require added statuses to include at least a name ([783f347](https://github.com/TMWare/status-rotate/commit/783f34728ee24582aaeb9056e2d8130124344860))
+
+
+### Chores
+
+* **deps:** set discord.js as peer dependency ([d059012](https://github.com/TMWare/status-rotate/commit/d0590121f8c1a3a4c785d69e69c8fabd64aa1293))
+* **deps:** upgrade dependencies ([65984a6](https://github.com/TMWare/status-rotate/commit/65984a681b1b3cec5ac5bbf1177d19c23135b386))
+* **deps:** upgrade discord.js to v13 ([416eab4](https://github.com/TMWare/status-rotate/commit/416eab4505d8b2b204a82884f1ebc090bfe57642))
+* **deps-dev:** bump eslint from 7.31.0 to 7.32.0 ([#179](https://github.com/TMWare/status-rotate/issues/179)) ([45e9577](https://github.com/TMWare/status-rotate/commit/45e9577e2f392170e03bb22bfd4ccd8f72cc77d2))
+* **node:** update node version lock for discord.js v13 ([75c1409](https://github.com/TMWare/status-rotate/commit/75c1409cd2ce241a4e40c93c1d5025f33f6d36c5))
+* **scripts:** remove postversion script ([1c837c6](https://github.com/TMWare/status-rotate/commit/1c837c6b7ade6a62dc98623a502a6666eeae1367))
+* **scripts:** use git push option `--follow-tags` ([6dd1e87](https://github.com/TMWare/status-rotate/commit/6dd1e8779cfd7ecfddcaf10a9a6457f9841b9e99))
+
+
+### Code Refactoring
+
+* **djs13:** do not use client interval handling ([d321c40](https://github.com/TMWare/status-rotate/commit/d321c4068ffbc282bf73347836737eedb63e626a))
+* **djs13:** update status update method ([796230d](https://github.com/TMWare/status-rotate/commit/796230d9fa49b15243d73d471f63268735426536))
+* **types:** make client generic ([c6074f5](https://github.com/TMWare/status-rotate/commit/c6074f52cc7d3fbc3306ecd7921e0d3286246ae2))
+
+
+### Continuous Integration
+
+* remove unused workflows ([60e3439](https://github.com/TMWare/status-rotate/commit/60e34399b5a388dbd37830f13552fe1c21719ddb))
+
+
+### Styles
+
+* improve readability ([4a42459](https://github.com/TMWare/status-rotate/commit/4a42459c927c4698b649b53d8c85fdc5adc88a2c))
+
 ## [1.2.6](https://github.com/TMWare/status-rotate/compare/v1.2.5...v1.2.6) (2021-08-01)
 
 
