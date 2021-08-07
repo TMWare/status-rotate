@@ -1,3 +1,10 @@
+## [1.2.8](https://github.com/TMWare/status-rotate/compare/v1.2.7...v1.2.8) (2021-08-07)
+
+
+### Code Refactoring
+
+* **types:** mark `.addStatus()` as synchronous ([0dbb222](https://github.com/TMWare/status-rotate/commit/0dbb22228a78e404debcc6996940602b85861b5a))
+
 ## [1.2.7](https://github.com/TMWare/status-rotate/compare/v1.2.6...v1.2.7) (2021-08-07)
 
 
