@@ -93,12 +93,11 @@ export default class StatusUpdater {
     if (this.timer !== false) {
       throw new Error('automatic status updates are already enabled')
     }
-    this.timer = this.client.setInterval(
+    this.timer = setInterval(
       () => {
         this.updateStatus()
       },
-      delay,
-      this
+      delay
     )
   }
 
@@ -109,7 +108,7 @@ export default class StatusUpdater {
     if (this.timer === false) {
       throw new Error('automatic status updates are not enabled')
     }
-    this.client.clearInterval(this.timer)
+    clearInterval(this.timer)
     this.timer = false
   }
 
