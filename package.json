@@ -26,7 +26,6 @@
     "lint:fix": "yarn run lint src/ --fix",
     "preversion": "yarn run build && yarn test",
     "prepublishOnly": "yarn run build && yarn test",
-    "postversion": "git push --follow-tags",
     "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
