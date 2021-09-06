@@ -1,3 +1,26 @@
+## [1.2.9](https://github.com/TMWare/status-rotate/compare/v1.2.8...v1.2.9) (2021-09-06)
+
+
+### Bug Fixes
+
+* **deps:** bump axios from 0.21.1 to 0.21.3 ([#193](https://github.com/TMWare/status-rotate/issues/193)) ([621a218](https://github.com/TMWare/status-rotate/commit/621a2180e0e5b8c017ab005c2e9513638df4e340))
+
+
+### Chores
+
+* **deps:** bump tar from 6.1.6 to 6.1.11 ([#192](https://github.com/TMWare/status-rotate/issues/192)) ([422d6fe](https://github.com/TMWare/status-rotate/commit/422d6fe98c62ff05e9e61413be680a9dc429df84))
+* **deps:** upgrade all dependencies ([9cb47a5](https://github.com/TMWare/status-rotate/commit/9cb47a525d01266083e54ec6ad3c8a505693d5f9))
+* **deps-dev:** bump discord.js from 13.0.0 to 13.1.0 ([#186](https://github.com/TMWare/status-rotate/issues/186)) ([4f7f6ee](https://github.com/TMWare/status-rotate/commit/4f7f6ee12bc8deb88d981d030c9ebe75771d3ca6))
+* **deps-dev:** bump husky from 7.0.1 to 7.0.2 ([#189](https://github.com/TMWare/status-rotate/issues/189)) ([9303d58](https://github.com/TMWare/status-rotate/commit/9303d587815ca10b90753a49416629776c9a422d))
+* **deps-dev:** bump semantic-release from 17.4.4 to 17.4.7 ([#190](https://github.com/TMWare/status-rotate/issues/190)) ([7649d9a](https://github.com/TMWare/status-rotate/commit/7649d9aa2d34edad88791a63ebc3cf50f261d180))
+* **deps-dev:** bump typescript from 4.3.5 to 4.4.2 ([#191](https://github.com/TMWare/status-rotate/issues/191)) ([3d3a23b](https://github.com/TMWare/status-rotate/commit/3d3a23bb234a03e4d384fbe64b5ad9dba9bc74e0))
+* **yarn:** re-lock ([ec4b4d3](https://github.com/TMWare/status-rotate/commit/ec4b4d3137ca53df34871c438a7e83d40de9a52b))
+
+
+### Styles
+
+* improve code readability ([2b10927](https://github.com/TMWare/status-rotate/commit/2b109272031e3d9b2aa9859fe2fd6e70030c147a))
+
 ## [1.2.8](https://github.com/TMWare/status-rotate/compare/v1.2.7...v1.2.8) (2021-08-07)
 
 
