@@ -14,7 +14,7 @@ const defaultStatuses: ActivityOptions[] = [
   { type: 'WATCHING', name: '{guilds} servers' }
 ]
 
-export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
+export default class StatusUpdater<ClientType extends DJSClient = DJSClient> {
   private readonly client!: ClientType
   private readonly parser!: VariableParser
 
@@ -54,11 +54,9 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
         }
         this.statusUrl = statuses
       }
-
       else if (Array.isArray(statuses)) {
         this._statuses = statuses
       }
-
       else {
         throw new Error('Invalid status options.')
       }
@@ -78,7 +76,7 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
    */
   private async _getStatuses (): Promise<ActivityOptions[]> {
     if (this.statusUrl) {
-      this._statuses = (await Axios.get(this.statusUrl)).data as ActivityOptions[]
+      this._statuses = (await Axios.get<ActivityOptions[]>(this.statusUrl)).data
       return this._statuses
     }
     else {
@@ -99,12 +97,9 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
       throw new Error('must have at least one status to choose from')
     }
 
-    this.timer = setInterval(
-      () => {
-        this.updateStatus()
-      },
-      delay
-    )
+    this.timer = setInterval(() => {
+      this.updateStatus()
+    }, delay)
   }
 
   /**
@@ -127,11 +122,13 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
   public async refetchOnlineData (additive: boolean = false): Promise<ActivityOptions[]> {
     if (!this.statusUrl) throw new Error('no status url specified')
     else if (additive) {
-      this._statuses.push(...((await Axios.get(this.statusUrl)).data as ActivityOptions[]))
+      this._statuses.push(
+        ...((await Axios.get<ActivityOptions[]>(this.statusUrl)).data)
+      )
       return this.statuses
     }
     else {
-      this._statuses = (await Axios.get(this.statusUrl)).data as ActivityOptions[]
+      this._statuses = (await Axios.get<ActivityOptions[]>(this.statusUrl)).data
       return this.statuses
     }
   }
@@ -225,7 +222,9 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
     // get current information about guild amounts etc. from client, feed it to parser
     this._updateParserData()
 
-    const $activity = activity ? this._getSafeActivity(activity) : this._chooseActivity()
+    const $activity = activity
+      ? this._getSafeActivity(activity)
+      : this._chooseActivity()
 
     if (shardId) $activity.shardId = shardId
 
@@ -233,7 +232,9 @@ export default class StatusUpdater <ClientType extends DJSClient = DJSClient> {
   }
 
   private _chooseActivity (): ActivityOptions {
-    return this._getSafeActivity(Util.arrayHelper.pickRandom(this.statuses) as ActivityOptions)
+    return this._getSafeActivity(
+      Util.arrayHelper.pickRandom(this.statuses) as ActivityOptions
+    )
   }
 
   private _getSafeActivity (options: ActivityOptions): ActivityOptions {
