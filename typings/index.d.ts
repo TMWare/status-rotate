@@ -1,7 +1,7 @@
 declare module '@tmware/status-rotate' {
   import { ActivityOptions, Client as DJSClient, Presence } from 'discord.js'
 
-  class StatusUpdater <ClientType extends DJSClient = DJSClient> {
+  class StatusUpdater<ClientType extends DJSClient = DJSClient> {
     statusUrl?: string
     /**
      * A status updater that can pull from the internet
