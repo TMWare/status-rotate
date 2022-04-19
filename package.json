@@ -62,7 +62,7 @@
     }
   },
   "dependencies": {
-    "@tmware/jitsuyo": "^1.6.5",
+    "@tmware/jitsuyo": "^1.6.7",
     "@tmware/variable-parser": "^1.2.2",
     "axios": "0.21.4"
   },
