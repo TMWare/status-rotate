@@ -1,3 +1,11 @@
+## [1.2.10](https://github.com/TMWare/status-rotate/compare/v1.2.9...v1.2.10) (2022-04-20)
+
+
+### Bug Fixes
+
+* upgrade @tmware/jitsuyo from 1.6.5 to 1.6.7 ([657af0d](https://github.com/TMWare/status-rotate/commit/657af0dfbcf70bcf473b0c9570e257c7fd35cacc))
+* upgrade axios from 0.21.4 to 0.26.1 ([30822d8](https://github.com/TMWare/status-rotate/commit/30822d82ca044b09db3a7945be4d52dc97d53959))
+
 ## [1.2.9](https://github.com/TMWare/status-rotate/compare/v1.2.8...v1.2.9) (2021-09-06)
 
 
