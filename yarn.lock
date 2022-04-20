@@ -861,9 +861,9 @@
     eslint-plugin-promise "^5.1.0"
 
 "@tmware/jitsuyo@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.6.5.tgz#5828f96ab2f3361c1dd6cf953521060b3c6288c5"
-  integrity sha512-BcWnRHBE+2oTWkCMtASNv13ZlyFo2x5mhLm/Ty6Mo82UaTwfXSChNv78S5/nkOWO3lCTqDnRHUBHjfwqhPz4Ww==
+  version "1.6.7"
+  resolved "https://registry.yarnpkg.com/@tmware/jitsuyo/-/jitsuyo-1.6.7.tgz#15147c4158f9075f0f5981351fe51dc866837acb"
+  integrity sha512-Hby1ZAfM91xE7Ep90cgtfs00HO4BH9qYuDPB/pmjfio0FnuFLZGEUmZ9tQdsgWs+JBVcFRQCwuaqToHbC200MQ==
 
 "@tmware/semantic-release-npm-github-publish@^1.4.4":
   version "1.5.1"
