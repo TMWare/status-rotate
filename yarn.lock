@@ -866,9 +866,9 @@
   integrity sha512-BcWnRHBE+2oTWkCMtASNv13ZlyFo2x5mhLm/Ty6Mo82UaTwfXSChNv78S5/nkOWO3lCTqDnRHUBHjfwqhPz4Ww==
 
 "@tmware/semantic-release-npm-github-publish@^1.4.4":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@tmware/semantic-release-npm-github-publish/-/semantic-release-npm-github-publish-1.5.1.tgz#feaef839e8dd3296e2d83e162a29744a5c1e59b6"
-  integrity sha512-sKguavB309hK8ITBwED3HD7ToDqk+5MQKfaGCub/v/1f8C13wPPYeXiZklPKndmcPnELl0oS/+v1gNX51cCwrg==
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@tmware/semantic-release-npm-github-publish/-/semantic-release-npm-github-publish-1.5.2.tgz#b3234455b1f98a442387e435605a56a4636b00b9"
+  integrity sha512-YqjyL9RMJIGae/O78SzPFfIam6G2SF6hwKVzeup19IGKYqVPwZ+V20b2zcRcDFuk1GDM6c4hwR67gvRamkVI5A==
   dependencies:
     "@semantic-release/changelog" "^6.0.1"
     "@semantic-release/commit-analyzer" "^9.0.2"
@@ -877,7 +877,7 @@
     "@semantic-release/npm" "^8.0.3"
     "@semantic-release/release-notes-generator" "^10.0.3"
     semantic-release "^19.0.0"
-    snyk "^1.794.0"
+    snyk "^1.859.0"
 
 "@tmware/variable-parser@^1.2.2":
   version "1.2.2"
@@ -5595,10 +5595,10 @@ smart-buffer@^4.1.0:
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
 
-snyk@^1.794.0:
-  version "1.880.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.880.0.tgz#efd36aaf7a254aa4ab092523e7795f417eb4c53d"
-  integrity sha512-K2aI8+evbbsPAtrOVVC3JAdFPBKeeLP74RM7Bh0C4V1d6pkIgTOUxLVcFDPmlTKcIjoYR6vKbmTQ+bd1su4YhA==
+snyk@^1.859.0:
+  version "1.908.0"
+  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.908.0.tgz#dee8aac7b9c80608dc258e17a9c8de129e29957e"
+  integrity sha512-fti0j50hDdDBwrwVfLGaHN+xCBvktpxDYIqpJ9pk0IMgQrxBM7fum6l5Pim+Jaq7tZASD3S3p+7RL4JWsS3O/A==
 
 socks-proxy-agent@^6.0.0:
   version "6.0.0"
