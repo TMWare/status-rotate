@@ -714,10 +714,10 @@
     p-retry "^4.0.0"
     url-join "^4.0.0"
 
-"@semantic-release/github@^8.0.0", "@semantic-release/github@^8.0.2":
-  version "8.0.2"
-  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-8.0.2.tgz#80114a41f6ec8ab6c0d38a436b48ff3f2223ab16"
-  integrity sha512-wIbfhOeuxlYzMTjtSAa2xgr54n7ZuPAS2gadyTWBpUt2PNAPgla7A6XxCXJnaKPgfVF0iFfSk3B+KlVKk6ByVg==
+"@semantic-release/github@^8.0.0", "@semantic-release/github@^8.0.4":
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-8.0.4.tgz#4ea242f6ad10a0474b0fbb09462e10c43518002a"
+  integrity sha512-But4e8oqqP3anZI5tjzZssZc2J6eoUdeeE0s7LVKKwyiAXJiQDWNNvtPOpgG2DsIz4+Exuse7cEQgjGMxwtLmg==
   dependencies:
     "@octokit/rest" "^18.0.0"
     "@semantic-release/error" "^2.2.0"
@@ -755,26 +755,7 @@
     semver "^7.1.2"
     tempy "^1.0.0"
 
-"@semantic-release/npm@^8.0.3":
-  version "8.0.3"
-  resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-8.0.3.tgz#69378ce529bbd263aa8fc899b2d0f874114e0302"
-  integrity sha512-Qbg7x/O1t3sJqsv2+U0AL4Utgi/ymlCiUdt67Ftz9HL9N8aDML4t2tE0T9MBaYdqwD976hz57DqHHXKVppUBoA==
-  dependencies:
-    "@semantic-release/error" "^3.0.0"
-    aggregate-error "^3.0.0"
-    execa "^5.0.0"
-    fs-extra "^10.0.0"
-    lodash "^4.17.15"
-    nerf-dart "^1.0.0"
-    normalize-url "^6.0.0"
-    npm "^7.0.0"
-    rc "^1.2.8"
-    read-pkg "^5.0.0"
-    registry-auth-token "^4.0.0"
-    semver "^7.1.2"
-    tempy "^1.0.0"
-
-"@semantic-release/npm@^9.0.0":
+"@semantic-release/npm@^9.0.0", "@semantic-release/npm@^9.0.1":
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/npm/-/npm-9.0.1.tgz#d81828eb1fb771e2767b3a8ee989915e1af27075"
   integrity sha512-I5nVZklxBzfMFwemhRNbSrkiN/dsH3c7K9+KSk6jUnq0rdLFUuJt7EBsysq4Ir3moajQgFkfEryEHPqiKJj20g==
@@ -866,18 +847,17 @@
   integrity sha512-BcWnRHBE+2oTWkCMtASNv13ZlyFo2x5mhLm/Ty6Mo82UaTwfXSChNv78S5/nkOWO3lCTqDnRHUBHjfwqhPz4Ww==
 
 "@tmware/semantic-release-npm-github-publish@^1.4.4":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@tmware/semantic-release-npm-github-publish/-/semantic-release-npm-github-publish-1.5.1.tgz#feaef839e8dd3296e2d83e162a29744a5c1e59b6"
-  integrity sha512-sKguavB309hK8ITBwED3HD7ToDqk+5MQKfaGCub/v/1f8C13wPPYeXiZklPKndmcPnELl0oS/+v1gNX51cCwrg==
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/@tmware/semantic-release-npm-github-publish/-/semantic-release-npm-github-publish-1.5.4.tgz#7d465ed2cb7d9d312b6934f09d4b932a92fbee65"
+  integrity sha512-h0WvFJUtQVm7X8a9JBQfhnKf/bW37btl2wnf65HDsiNpPRgkU4tUZmQ5j3z9+0jpRM3/RKy8gN47Ta/XbIV5tw==
   dependencies:
     "@semantic-release/changelog" "^6.0.1"
     "@semantic-release/commit-analyzer" "^9.0.2"
     "@semantic-release/git" "^10.0.1"
-    "@semantic-release/github" "^8.0.2"
-    "@semantic-release/npm" "^8.0.3"
+    "@semantic-release/github" "^8.0.4"
+    "@semantic-release/npm" "^9.0.1"
     "@semantic-release/release-notes-generator" "^10.0.3"
-    semantic-release "^19.0.0"
-    snyk "^1.794.0"
+    semantic-release "^19.0.3"
 
 "@tmware/variable-parser@^1.2.2":
   version "1.2.2"
@@ -5454,10 +5434,10 @@ semantic-release@^17.4.7:
     signale "^1.2.1"
     yargs "^16.2.0"
 
-semantic-release@^19.0.0:
-  version "19.0.2"
-  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-19.0.2.tgz#6011683c06d7b416e5faa5a3f43b22bbf3798aa8"
-  integrity sha512-7tPonjZxukKECmClhsfyMKDt0GR38feIC2HxgyYaBi+9tDySBLjK/zYDLhh+m6yjnHIJa9eBTKYE7k63ZQcYbw==
+semantic-release@^19.0.3:
+  version "19.0.3"
+  resolved "https://registry.yarnpkg.com/semantic-release/-/semantic-release-19.0.3.tgz#9291053ad9890052f28e7c5921d4741530d516fd"
+  integrity sha512-HaFbydST1cDKZHuFZxB8DTrBLJVK/AnDExpK0s3EqLIAAUAHUgnd+VSJCUtTYQKkAkauL8G9CucODrVCc7BuAA==
   dependencies:
     "@semantic-release/commit-analyzer" "^9.0.2"
     "@semantic-release/error" "^3.0.0"
@@ -5594,11 +5574,6 @@ smart-buffer@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/smart-buffer/-/smart-buffer-4.2.0.tgz#6e1d71fa4f18c05f7d0ff216dd16a481d0e8d9ae"
   integrity sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg==
-
-snyk@^1.794.0:
-  version "1.880.0"
-  resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.880.0.tgz#efd36aaf7a254aa4ab092523e7795f417eb4c53d"
-  integrity sha512-K2aI8+evbbsPAtrOVVC3JAdFPBKeeLP74RM7Bh0C4V1d6pkIgTOUxLVcFDPmlTKcIjoYR6vKbmTQ+bd1su4YhA==
 
 socks-proxy-agent@^6.0.0:
   version "6.0.0"
