@@ -78,7 +78,7 @@
     "cz-conventional-changelog": "3.3.0",
     "discord.js": "^13.1.0",
     "eslint": "^7.32.0",
-    "husky": "^7.0.2",
+    "husky": "^8.0.2",
     "lint-staged": "^11.1.2",
     "rimraf": "^3.0.2",
     "semantic-release": "^17.4.7",
