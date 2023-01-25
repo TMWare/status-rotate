@@ -64,7 +64,7 @@
   "dependencies": {
     "@tmware/jitsuyo": "^1.6.5",
     "@tmware/variable-parser": "^1.2.2",
-    "axios": "0.21.4"
+    "axios": "1.2.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
