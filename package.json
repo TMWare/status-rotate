@@ -68,7 +68,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
+    "@commitlint/config-conventional": "^17.4.3",
     "@tmuniversal/ts": "^1.2.1",
     "@tmware/eslint-config": "^1.1.3",
     "@tmware/eslint-config-typescript": "^1.0.8",
